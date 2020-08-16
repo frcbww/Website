@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 56px;
+    background-color: #ffffff;
+    align-items: center;
+    position: fixed;
+}
+
+.title {
+    margin: 0 auto 0 10px;
+}
+
+.title img {
+    height: 56px;
+}
+
+.menu-item {
+    list-style: none;
+    display: inline-block;
+    margin-right: 40px;
+}
