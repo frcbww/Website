@@ -13,11 +13,10 @@ header {
 }
 
 .title {
-    margin: 0 auto 0 10px;
-}
-
-.title img {
+    width: 56px;
     height: 56px;
+    margin-left: 16px;
+    margin-right: auto;
 }
 
 .menu-item {
