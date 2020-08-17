@@ -1,7 +1,11 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
 }
+
+/*-------------------------------------------------*/
 
 header {
     display: flex;
@@ -15,7 +19,7 @@ header {
 .title {
     width: 56px;
     height: 56px;
-    margin-left: 16px;
+    margin-left: 24px;
     margin-right: auto;
 }
 
@@ -23,4 +27,24 @@ header {
     list-style: none;
     display: inline-block;
     margin-right: 40px;
+}
+
+.menu-item a {
+    color: #212121;
+    text-decoration: none;
+}
+
+.menu-item a:hover {
+    color: #41B3BF;
+}
+
+.menu-item i {
+    margin-left: 8px;
+}
+
+/*-------------------------------------------------*/
+
+.section-top {
+    background-color: aqua;
+    height: 100vh;
 }
