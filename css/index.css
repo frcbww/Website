@@ -10,7 +10,7 @@ header {
     display: flex;
     width: 100%;
     height: 56px;
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, .9);
     align-items: center;
     position: fixed;
     z-index: 2;
@@ -50,9 +50,8 @@ header img {
 
 .top-section {
     position: relative;
-    padding-top: 56px;
     background-color: #757575;
-    height: calc(100vh - 56px);
+    height: 100vh;
 }
 
 .top-text {
@@ -64,10 +63,13 @@ header img {
     z-index: 1;
     color: #ffffff;
     font-size: 64px;
+    font-family: 'Catamaran', sans-serif;
 }
 
 .top-text span {
+    line-height: 1.2;
     font-size: 96px;
+    font-family: 'Catamaran', sans-serif;
 }
 
 .top-scroll-hint {
@@ -80,6 +82,8 @@ header img {
     color: #ffffff;
     text-align: center;
     font-size: 16px;
+    font-family: 'Catamaran', sans-serif;
+    line-height: 1.5;
 }
 
 .top-filter::after {
@@ -94,7 +98,7 @@ header img {
 
 .top-video {
     width: 100%;
-    height: calc(100vh - 56px);
+    height: 100vh;
     object-fit: cover;
     object-position: center center;
 }
@@ -138,10 +142,11 @@ header img {
     -o-transition: 0.05s ease-in-out;
     -moz-transition: 0.05s ease-in-out;
     -webkit-transition: 0.05s ease-in-out;
+    text-decoration: none;
 }
 
 .news-list li a:hover {
-    color: #41B3BF;
+    text-decoration: underline;
 }
 
 .news-list li div {
