@@ -16,7 +16,7 @@ header {
     z-index: 2;
 }
 
-.title {
+header img {
     width: 56px;
     height: 56px;
     margin-left: 24px;
@@ -32,6 +32,10 @@ header {
 .menu-item a {
     color: #212121;
     text-decoration: none;
+    transition: 0.05s ease-in-out;
+    -o-transition: 0.05s ease-in-out;
+    -moz-transition: 0.05s ease-in-out;
+    -webkit-transition: 0.05s ease-in-out;
 }
 
 .menu-item a:hover {
@@ -130,13 +134,13 @@ header {
     color: #BF7741;
     display: table-cell;
     vertical-align: middle;
-    transition: 0.1s ease-in-out;
-    -o-transition: 0.1s ease-in-out;
-    -moz-transition: 0.1s ease-in-out;
-    -webkit-transition: 0.1s ease-in-out;
+    transition: 0.05s ease-in-out;
+    -o-transition: 0.05s ease-in-out;
+    -moz-transition: 0.05s ease-in-out;
+    -webkit-transition: 0.05s ease-in-out;
 }
 
-.news-list li a:active {
+.news-list li a:hover {
     color: #41B3BF;
 }
 
@@ -149,4 +153,10 @@ header {
     display: table-cell;
     vertical-align: top;
     width: 88px;
+}
+
+/*  Responsive  */
+
+@media screen and (max-width: 1120px) {
+    /* TODO レスポンシブ対応（いつか）*/
 }
