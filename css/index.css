@@ -101,7 +101,7 @@ header img {
 .menu-item:hover .sub-menu-item {
     overflow: visible;
     opacity: 1;
-    height: 48px;
+    height: 56px;
 }
 
 .sub-menu-item a {
@@ -185,7 +185,7 @@ header img {
     line-height: 1.5;
 }
 
-.top-filter::after {
+.top-filter:after {
     position: absolute;
     left: 0;
     right: 0;
@@ -205,7 +205,8 @@ header img {
 /*  News  */
 
 .news-section {
-    margin: 40px;
+    margin: 40px 0 80px;
+    color: #212121;
 }
 
 .news-title {
@@ -256,6 +257,83 @@ header img {
     display: table-cell;
     vertical-align: top;
     width: 88px;
+}
+
+/*  Content  */
+
+.content-section {
+    display: flex;
+    margin: 0 0 80px;
+}
+
+.content-text {
+    margin: auto 8%;
+    color: #212121;
+}
+
+.content-text h1 {
+    font-size: 56px;
+    font-weight: bold;
+}
+
+.content-text p {
+    margin-top: 40px;
+    font-size: 16px;
+}
+
+.content-button {
+    margin: 40px 8px 0 auto;
+    text-align: right;
+}
+
+.content-button a {
+    font-size: 12px;
+    font-weight: bold;
+    padding: 16px 28px;
+    background-color: #616161;
+    color: #ffffff;
+    border-style: none;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.content-image-left, .content-image-right {
+    position: relative;
+}
+
+.content-image-left img, .content-image-right img {
+    width: 50vw;
+    min-height: 500px;
+    height: 30vw;
+    object-fit: cover;
+}
+
+.content-image-left:before {
+    content: "";
+    position: absolute;
+    left: 90%;
+    right: 0;
+    top: -5px;
+    bottom: 0;
+    transform: translateX(calc(-2vw + 1px));
+    border-style: solid;
+    border-color: #ffffff transparent transparent transparent;
+    border-width: max(510px, 31vw) 0 0 7vw;
+}
+
+.content-image-right:before {
+    content: "";
+    position: absolute;
+    left: 90%;
+    right: 0;
+    top: -5px;
+    bottom: 0;
+    transform: translateX(calc(-45vw - 1px));
+    border-style: solid;
+    border-color: #ffffff transparent transparent transparent;
+    border-width: max(510px, 31vw) 7vw 0 0;
 }
 
 /*  Responsive  */
