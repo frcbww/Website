@@ -340,37 +340,20 @@ header img {
     position: relative;
 }
 
-.content-image-left img, .content-image-right img {
+.content-image-left img {
     width: 50vw;
     min-height: 500px;
     height: 30vw;
     object-fit: cover;
+    clip-path: polygon(0 0, 88% 0, 100% 100%, 0% 100%);
 }
 
-.content-image-left:before {
-    content: "";
-    position: absolute;
-    left: 90%;
-    right: 0;
-    top: -5px;
-    bottom: 0;
-    transform: translateX(calc(-2vw + 1px));
-    border-style: solid;
-    border-color: #ffffff transparent transparent transparent;
-    border-width: max(510px, 31vw) 0 0 7vw;
-}
-
-.content-image-right:before {
-    content: "";
-    position: absolute;
-    left: 90%;
-    right: 0;
-    top: -5px;
-    bottom: 0;
-    transform: translateX(calc(-45vw - 1px));
-    border-style: solid;
-    border-color: #ffffff transparent transparent transparent;
-    border-width: max(510px, 31vw) 7vw 0 0;
+.content-image-right img {
+    width: 50vw;
+    min-height: 500px;
+    height: 30vw;
+    object-fit: cover;
+    clip-path: polygon(12% 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 /*  Responsive  */
