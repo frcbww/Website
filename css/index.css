@@ -220,15 +220,15 @@ header img {
 .news-list {
     border-top: 1px solid rgba(0, 0, 0, .2);
     width: 50%;
-    min-width: 600px;
+    min-width: 700px;
     list-style: none;
     margin: 0 auto;
 }
 
 .news-list li {
     border-bottom: 1px solid rgba(0, 0, 0, .2);
-    font-size: 14px;
-    padding: 12px 56px;
+    font-size: 16px;
+    padding: 12px 80px;
     display: table;
     width: 100%;
     box-sizing: border-box;
@@ -251,7 +251,7 @@ header img {
 
 .news-list li div {
     display: table-cell;
-    width: 176px;
+    width: 24%;
 }
 
 .news-list li time {
@@ -278,12 +278,12 @@ header img {
 }
 
 .content-text p {
-    margin-top: 40px;
+    margin-top: 32px;
     font-size: 16px;
 }
 
 .content-button {
-    margin: 40px 8px 0 auto;
+    margin: 48px 8px 0 auto;
     text-align: right;
 }
 
