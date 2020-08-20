@@ -437,7 +437,101 @@ header img {
     vertical-align: 1px;
 }
 
+/*  Footer  */
+
+.footer-upper {
+    color: #ffffff;
+    background-color: #424242;
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    line-height: 2.4;
+}
+
+.footer-upper-inner {
+    width: calc(80vw + 1.2%);
+    max-width: calc(1140px + 1.2%);
+    display: flex;
+}
+
+.footer-upper-left {
+    width: 60%;
+    display: flex;
+}
+
+.footer-upper-left nav {
+    margin-right: auto;
+}
+
+.footer-upper-left nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-upper-left nav a:after {
+    content: "\A" ;
+    white-space: pre ;
+}
+
+.footer-upper-left nav a:hover {
+    text-decoration: underline;
+}
+
+.footer-upper-right {
+    width: 40%;
+    display: flex;
+}
+
+.footer-upper-right nav {
+    margin-left: auto;
+}
+
+.footer-upper-right nav p {
+    color: #ffffff;
+}
+
+.vertical-line {
+    width: 2px;
+    height: 120px;
+    background-color: rgba(255, 255, 255, .2);
+}
+
+.footer-lower {
+    color: #ffffff;
+    background-color: #616161;
+    height: 50px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /*  Responsive  */
+
+@media screen and (max-width: 1420px) {
+    .footer-upper {
+        height: 160px;
+    }
+
+    .footer-upper-left {
+        display: none;
+    }
+
+    .footer-upper-right {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .footer-upper-right nav {
+        margin: 0 4%;
+    }
+
+    .vertical-line {
+        display: none;
+    }
+}
 
 @media screen and (max-width: 1120px) {
     /* TODO レスポンシブ対応（いつか）*/
