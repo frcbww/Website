@@ -23,6 +23,16 @@ $(window).on('scroll', function () {
 $(function () {
     $('#hm-menu-trigger').on('click', function () {
         $(this).toggleClass('active');
-        return false;
+
+        const isOpen = $(this).hasClass('active')
+        const rightVal = (isOpen) ? 0 : -330
+
+        $('header nav').stop().animate({
+            right: rightVal
+        }, 200, "easeOutQuad");
+
+        // $('main').stop().animate({
+        //     right: rightVal + 330
+        // }, 400, "easeOutQuad");
     });
 });
