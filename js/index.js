@@ -26,10 +26,6 @@ $(window).on('load resize', function () {
         const heightSize = $(window).height();
         $('.top-section').height(heightSize);
         $('.top-video').height(heightSize);
-        $('.top-text').css({
-            'transform': `translateY(calc(56px - ${heightSize / 10}%))`,
-            '-webkit-transform': `translateY(calc(56px - ${heightSize / 10}%))`
-        });
     }
 });
 
