@@ -644,6 +644,14 @@ header img {
         bottom: 0;
     }
 
+    .menu-item:hover > a {
+        color: #212121;
+    }
+
+    .menu-item a:hover {
+        color: #41B3BF;
+    }
+
     .menu-item i {
         display: none;
     }
@@ -667,14 +675,15 @@ header img {
         opacity: initial;
         height: initial;
         margin-top: 12px;
-        padding-left: 32px;
+        padding-left: 24px;
+        font-size: 15px;
     }
 
     .sub-menu-item a:before {
         content: '-';
         position: absolute;
         top: 0;
-        left: 16px;
+        left: 12px;
     }
 
     .menu-item:hover .sub-menu-item {
@@ -695,12 +704,13 @@ header img {
     }
 
     .sub-menu-item span {
+        color: #212121;
         display: initial;
         position: initial;
     }
 
     .sub-menu-item a:hover span {
-        color: #00838F;
+        color: #41B3BF;
         transform: initial;
     }
 
