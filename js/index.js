@@ -21,18 +21,15 @@ $(window).on('scroll', function () {
 
 
 $(function () {
-    $('#hm-menu-trigger').on('click', function () {
-        $(this).toggleClass('active');
+    $('.hamburger-menu').on('click', function () {
+        const trigger = $('#hm-menu-trigger');
+        trigger.toggleClass('active');
 
-        const isOpen = $(this).hasClass('active')
-        const rightVal = (isOpen) ? 0 : -330
+        const isOpen = trigger.hasClass('active')
+        const rightVal = (isOpen) ? 0 : -325
 
         $('header nav').stop().animate({
             right: rightVal
         }, 200, "easeOutQuad");
-
-        // $('main').stop().animate({
-        //     right: rightVal + 330
-        // }, 400, "easeOutQuad");
     });
 });
