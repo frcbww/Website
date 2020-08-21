@@ -1,3 +1,6 @@
+const isIE = (window.navigator.userAgent.toLowerCase().indexOf('msie') !== -1
+    || window.navigator.userAgent.toLowerCase().indexOf('trident') !== -1);
+
 $(window).on('scroll', function () {
     let scroll = $(document).scrollTop();
 
@@ -9,7 +12,9 @@ $(window).on('scroll', function () {
     }
 
     // 背景画像をスクロールする
-    $('.content-bg').stop(true, true).animate({
-        'background-position-y': scroll / 3 - 500 + 'px'
-    }, 100);
+    if (!isIE) {
+        $('.content-bg').stop(true, true).animate({
+            'background-position-y': scroll / 3 - 500 + 'px'
+        }, 100);
+    }
 });
