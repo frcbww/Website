@@ -18,3 +18,11 @@ $(window).on('scroll', function () {
         }, 100);
     }
 });
+
+
+$(function () {
+    $('#hm-menu-trigger').on('click', function () {
+        $(this).toggleClass('active');
+        return false;
+    });
+});
