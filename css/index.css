@@ -84,7 +84,7 @@ header img {
     -webkit-transition: .3s;
 }
 
-.sub-menu-item:before {
+.menu-item:hover .sub-menu-item:before {
     content: "";
     position: absolute;
     top: -8px;
