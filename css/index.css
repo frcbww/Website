@@ -571,6 +571,14 @@ header img {
 /*  Responsive  */
 
 @media screen and (max-width: 1420px) {
+    .top-text {
+        font-size: 56px;
+    }
+
+    .top-text span {
+        font-size: 88px;
+    }
+
     .footer-upper {
         height: 160px;
     }
