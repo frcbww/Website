@@ -742,6 +742,7 @@ header img {
     .content-section-left, .content-section-right {
         position: relative;
         width: 90vw;
+        padding: 32px 0;
     }
 
     .content-section-right {
@@ -773,6 +774,7 @@ header img {
     .content-button a {
         background-color: rgba(0, 0, 0, 0);
         border: solid 2px #ffffff;
+        padding: 14px 40px;
     }
 
     .content-button a:hover {
@@ -785,6 +787,7 @@ header img {
         width: 90vw;
         filter: brightness(60%);
         -webkit-filter: brightness(60%);
+        min-height: 480px;
     }
 
     /*  Content Box  */
@@ -830,7 +833,7 @@ header img {
     /*  Content  */
     .content-section-left, .content-section-right {
         width: 100vw;
-        padding: 20px 0;
+        padding: 16px 0;
     }
 
     .content-text h1 {
@@ -838,7 +841,7 @@ header img {
     }
 
     .content-text p {
-        margin-top: 8%;
+        margin-top: 4%;
         font-size: 15px;
     }
 
@@ -847,7 +850,7 @@ header img {
     }
 
     .content-button a {
-        padding: 14px 8%;
+        padding: 12px 8%;
     }
 
     .content-button i {
@@ -856,7 +859,7 @@ header img {
 
     .content-image img {
         width: 100vw;
-        min-height: 420px;
+        min-height: 400px;
     }
 
     .content-text {
@@ -888,6 +891,11 @@ header img {
 }
 
 @media screen and (max-width: 540px) {
+    /*  Content  */
+    .content-image img {
+        min-height: 320px;
+    }
+
     /*  Footer  */
     .footer-upper-right nav:first-child {
         display: none;
