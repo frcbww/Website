@@ -728,6 +728,11 @@ header img {
         display: none;
     }
 
+    /*  Top  */
+    .top-text {
+        top: 46%;
+    }
+
     /*  News  */
     .news-list {
         width: 95%;
@@ -813,6 +818,7 @@ header img {
 @media screen and (max-width: 680px) {
     /*  Top  */
     .top-text {
+        top: 45%;
         left: 8%;
         font-size: calc(72px + ((1vw - 0.64rem) * 5));
     }
