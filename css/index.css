@@ -333,6 +333,7 @@ header img {
 .news-list li div {
     display: table-cell;
     width: 24%;
+    min-width: 112px;
 }
 
 .news-list li time {
@@ -571,6 +572,7 @@ header img {
 /*  Responsive  */
 
 @media screen and (max-width: 1420px) {
+    /*  Top  */
     .top-text {
         font-size: 56px;
     }
@@ -579,6 +581,7 @@ header img {
         font-size: 88px;
     }
 
+    /*  Footer  */
     .footer-upper {
         height: 160px;
     }
@@ -601,7 +604,8 @@ header img {
     }
 }
 
-@media screen and (max-width: 1120px) {
+@media screen and (max-width: 1024px) {
+    /*  Hamburger Menu  */
     .hamburger-menu {
         display: block;
         margin: auto 0 auto auto;
@@ -720,5 +724,89 @@ header img {
 
     .sub-menu-item a:hover i {
         display: none;
+    }
+
+    /*  News  */
+    .news-list {
+        width: 95%;
+        min-width: 0;
+    }
+
+    .news-list li {
+        padding: 12px 10%;
+    }
+
+    /*  Content  */
+    .content-section {
+        display: flex;
+        padding: 40px 0;
+    }
+
+    .content-text {
+        position: absolute;
+        margin: auto 7%;
+        width: 50vw;
+        color: #212121;
+        z-index: 1;
+    }
+
+    .content-text h1 {
+        font-size: 56px;
+        font-weight: bold;
+    }
+
+    .content-text p {
+        margin-top: 32px;
+        font-size: 16px;
+    }
+
+    .content-button {
+        margin: 48px 8px 0 auto;
+        text-align: right;
+    }
+
+    .content-button a {
+        display: inline-block;
+        font-size: 12px;
+        font-weight: bold;
+        padding: 16px 40px;
+        background-color: #424242;
+        color: #ffffff;
+        border-style: none;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        text-decoration: none;
+        transition: all 0.3s ease 0s;
+    }
+
+    .content-button a:hover {
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
+        transform: translateY(-4px);
+        background-color: #212121;
+    }
+
+    .content-button i {
+        margin-left: 16px;
+    }
+
+    .content-image-right {
+        margin-left: auto;
+    }
+
+    .content-image-left img {
+        width: 90vw;
+        min-height: 500px;
+        height: 30vw;
+        object-fit: cover;
+        clip-path: polygon(0 0, 88% 0, 100% 100%, 0% 100%);
+    }
+
+    .content-image-right img {
+        width: 90vw;
+        min-height: 500px;
+        height: 30vw;
+        object-fit: cover;
+        clip-path: polygon(12% 0, 100% 0, 100% 100%, 0% 100%);
     }
 }
