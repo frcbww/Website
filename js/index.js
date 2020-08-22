@@ -42,4 +42,9 @@ $(function () {
             right: rightVal
         }, 200, "easeOutQuad");
     });
+
+    // スクロールボタン
+    $(".top-scroll-hint").on("click", function () {
+        $("html").animate({scrollTop: $(".top-section")[0].scrollHeight - 56}, 500, "easeOutQuad");
+    })
 });
