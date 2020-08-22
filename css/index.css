@@ -832,7 +832,7 @@ header img {
 
     /*  Content  */
     .content-section-left, .content-section-right {
-        width: 100vw;
+        width: 96vw;
         padding: 16px 0;
     }
 
@@ -858,7 +858,7 @@ header img {
     }
 
     .content-image img {
-        width: 100vw;
+        width: 96vw;
         min-height: 400px;
     }
 
