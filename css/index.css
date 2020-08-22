@@ -29,6 +29,9 @@ header.transform {
 header img {
     width: 56px;
     height: 56px;
+}
+
+header > a {
     margin-left: 24px;
     margin-right: auto;
 }
@@ -912,7 +915,7 @@ header img {
 
 @media screen and (max-width: 540px) {
     /*  Header  */
-    header img {
+    header > a {
         margin-left: 16px;
     }
 
