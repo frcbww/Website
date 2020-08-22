@@ -891,12 +891,21 @@ header img {
 }
 
 @media screen and (max-width: 540px) {
+    /*  Header  */
+    header img {
+        margin-left: 16px;
+    }
+
     /*  Content  */
     .content-image img {
         min-height: 320px;
     }
 
     /*  Footer  */
+    .footer-upper-right nav {
+        margin: 0;
+    }
+
     .footer-upper-right nav:first-child {
         display: none;
     }
