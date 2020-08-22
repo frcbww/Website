@@ -646,6 +646,12 @@ header > a {
         z-index: 3;
     }
 
+    header nav > ul {
+        height: 100%;
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
     .menu-item {
         display: flex;
         flex-flow: column;
