@@ -829,7 +829,7 @@ header img {
 
     /*  News  */
     .news-list li {
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .news-list li div {
@@ -848,7 +848,7 @@ header img {
 
     .content-text p {
         margin-top: 4%;
-        font-size: 15px;
+        font-size: 14px;
         margin-left: 4px;
     }
 
@@ -879,7 +879,7 @@ header img {
     }
 
     .content-box-text p {
-        font-size: 15px;
+        font-size: 14px;
         margin-top: 4%;
     }
 
@@ -888,7 +888,7 @@ header img {
     }
 
     .content-box-button a {
-        font-size: 15px;
+        font-size: 14px;
     }
 
     /*  Footer  */
