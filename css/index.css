@@ -708,6 +708,10 @@ header > a {
         bottom: 0;
     }
 
+    .menu-item.br:after {
+        content: none;
+    }
+
     .menu-item:hover > a {
         color: #212121;
     }
