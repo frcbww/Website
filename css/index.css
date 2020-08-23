@@ -34,6 +34,7 @@ header img {
 header > a {
     margin-left: 24px;
     margin-right: auto;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .menu-item {
@@ -412,6 +413,7 @@ header > a {
     border-radius: 3px;
     text-decoration: none;
     transition: all 0.3s ease 0s;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .content-button a:hover {
@@ -847,7 +849,7 @@ header > a {
     .content-button a:hover {
         box-shadow: none;
         transform: translateY(0);
-        background-color: rgba(255, 255, 255, .1);
+        background-color: rgba(255, 255, 255, .2);
     }
 
     .content-image img {
