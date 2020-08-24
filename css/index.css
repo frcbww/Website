@@ -110,7 +110,6 @@
     height: 1px;
     margin: 0 auto;
     text-align: center;
-    background-image: -webkit-linear-gradient(left, transparent, rgba(0, 0, 0, .1) 10%, rgba(0, 0, 0, .1) 90%, transparent);
     background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, .1) 10%, rgba(0, 0, 0, .1) 90%, transparent);
     background-position: center;
     background-repeat: no-repeat;
@@ -198,8 +197,6 @@
     background-color: #424242;
     color: #ffffff;
     border-style: none;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
     border-radius: 3px;
     text-decoration: none;
     transition: all 0.3s ease 0s;
