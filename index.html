@@ -31,7 +31,12 @@
 </head>
 <body>
 <header>
-    <a href=""><img src="image/BWW-transparent-logo.png" alt="BWW"></a>
+    <a href="">
+        <picture>
+            <source type="image/webp" srcset="image/BWW-transparent-logo.webp">
+            <img src="image/BWW-transparent-logo.png" alt="BWW">
+        </picture>
+    </a>
     <nav>
         <ul>
             <li class="menu-item"><a href="">HOME</a></li>
@@ -218,5 +223,6 @@
         src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
 <script type="text/javascript" src="js/common.js"></script>
+<script src="js/modernizr-custom.js"></script>
 </body>
 </html>

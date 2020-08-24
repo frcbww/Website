@@ -153,10 +153,17 @@
 /*  Content  */
 
 .content-bg {
-    background-image: url("../image/top-page-bg.png");
     background-position: top center;
     background-size: cover;
     background-repeat: repeat-y;
+}
+
+.no-webp .content-bg {
+    background-image: url("../image/top-page-bg.png");
+}
+
+.webp .content-bg {
+    background-image: url("../image/top-page-bg.webp");
 }
 
 .content-bg-filter {
