@@ -8,16 +8,25 @@ $(window).on('load scroll', function () {
 });
 
 $(function () {
-    // ハンバーガーメニューのON・OFF切り替え
+    const trigger = $('#hm-menu-trigger');
+    // ハンバーガーメニューのクリックリスナー
     $('.hamburger-menu').on('click', function () {
-        const trigger = $('#hm-menu-trigger');
+        hamburger_menu_toggle();
+    });
+
+    // ハンバーガーメニューの領域外クリック時にOFF切り替え
+    $(document).on('click', function (e) {
+        if (trigger.hasClass('active') && !$(e.target).closest('header').length) {
+            hamburger_menu_toggle();
+        }
+    });
+
+    // ハンバーガーメニューのON・OFF切り替え
+    function hamburger_menu_toggle() {
         trigger.toggleClass('active');
-
-        const isOpen = trigger.hasClass('active')
-        const rightVal = (isOpen) ? 0 : -325
-
+        const rightVal = (trigger.hasClass('active')) ? 0 : -325;
         $('header nav').stop().animate({
             right: rightVal
         }, 200, "easeOutQuad");
-    });
+    }
 });
