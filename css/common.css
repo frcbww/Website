@@ -361,11 +361,15 @@ header > a {
         z-index: 3;
     }
 
-    header nav > ul {
-        margin: 56px 0;
-        height: 100%;
+    header nav > div {
+        margin-top: 56px;
+        height: calc(100% - 56px);
         overflow: auto;
         -webkit-overflow-scrolling: touch;
+    }
+
+    header nav > div > ul {
+        margin-bottom: 56px;
     }
 
     .menu-item {
