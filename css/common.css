@@ -353,7 +353,6 @@ header > a {
         right: -325px;
         width: 320px;
         height: 100%;
-        padding-top: 56px;
         backdrop-filter: blur(12px);
         -webkit-backdrop-filter: blur(12px);
         background: rgba(255, 255, 255, .9);
@@ -363,6 +362,7 @@ header > a {
     }
 
     header nav > ul {
+        margin: 56px 0;
         height: 100%;
         overflow: auto;
         -webkit-overflow-scrolling: touch;
@@ -386,10 +386,6 @@ header > a {
         position: absolute;
         left: 0;
         bottom: 0;
-    }
-
-    .menu-item.br:after {
-        content: none;
     }
 
     .menu-item:hover > a {
