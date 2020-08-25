@@ -1,0 +1,32 @@
+header {
+    margin-top: -56px;
+}
+
+/*  Top  */
+
+.top-filter {
+    background-color: rgba(0, 0, 0, .6);
+    height: 100%;
+}
+
+.top-section {
+    margin-top: 56px;
+    position: relative;
+    height: 320px;
+    background-image: url("../image/top-image.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.top-section h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    width: 64%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 64px;
+}
