@@ -2,12 +2,222 @@ header {
     margin-top: -56px;
 }
 
-/*  Top  */
-
-.top-filter {
-    background-color: rgba(0, 0, 0, .6);
-    height: 100%;
+h1 {
+    position: relative;
+    padding: 8px 0 8px 160px;
+    border-bottom: 3px solid #212121;
+    font-size: 32px;
+    line-height: 1.4;
+    margin-bottom: 32px;
+    color: #212121;
 }
+
+h1 span {
+    font-family: 'Roboto', sans-serif;
+    font-size: 64px;
+    position: absolute;
+    left: 0;
+    bottom: -16px;
+    color: #212121;
+}
+
+h2 {
+    position: relative;
+    border-bottom: 3px double #212121;
+    padding-bottom: 4px;
+    padding-left: 4px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+p {
+    line-height: 2;
+    font-size: 16px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table th, table td {
+    padding: 10px 0;
+    text-align: center;
+}
+
+table tr:nth-child(odd) {
+    background-color: #eee
+}
+
+img {
+    display: block;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+/*
+    画像の大まかなサイズを指定できるクラス
+*/
+img.small {
+    width: 400px;
+}
+
+img.medium {
+    width: 500px;
+}
+
+img.large {
+    width: 80%;
+}
+
+/*
+    row: ２つの画像を均等に並べるクラス
+
+    <div class="row">
+        <img src="image1.png" alt="">
+        <img src="image2.png" alt="">
+    </div>
+*/
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.row img {
+    display: inline-block;
+    width: 49.2%;
+}
+
+/*
+    third: ３つの画像をいい感じに並べるクラス
+    ※ 現在3:2の比率の画像のみ対応
+
+    <div class="third">
+        <div class="youtube">
+            <iframe src=""></iframe>
+        </div>
+        <div class="col">
+            <img src="image1.jpg" alt="">
+            <img src="image2.jpg" alt="">
+        </div>
+    </div>
+*/
+.third {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.third div:first-child {
+    width: 150%;
+    padding-bottom: 42%;
+    margin-right: 16px;
+}
+
+.third div:last-child {
+    flex-direction: column;
+    width: 66.8%;
+}
+
+/*
+    four: ４つの画像を均等に並べるクラス
+
+    <div class="four">
+        <img src="image1.png" alt="">
+        <img src="image2.png" alt="">
+        <img src="image3.png" alt="">
+        <img src="image4.png" alt="">
+    </div>
+*/
+.four {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.four img {
+    display: inline-block;
+    width: 25%;
+}
+
+/*
+    code: コードスタイルを適用できるクラス
+
+    <div class="code">
+        <code>
+            int i;<br>
+            for (i = 0; i < 10; i++) {<br>
+                printf("BWW");<br>
+            }
+        </code>
+    </div>
+*/
+.code {
+    color: #FAFAFA;
+    background-color: #212121;
+    padding: 16px 40px 20px;
+    margin-bottom: 16px;
+    overflow-x: auto;
+}
+
+code {
+    white-space: nowrap;
+}
+
+
+/*
+    box: 囲み枠が作れるクラス
+
+    <div class="box">
+        <div class="box-title">いかがでしたか</div>
+        <p>
+            つまりBWWとはFRCチームだということです<br>
+        </p>
+    </div>
+*/
+.box {
+    margin: 24px 0;
+    background: #E0F7FA;
+}
+
+.box .box-title {
+    font-size: 20px;
+    background: #26C6DA;
+    padding: 8px 20px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.box p {
+    font-size: 16px;
+    padding: 16px 20px;
+}
+
+/*
+    YouTube動画をiframeで埋め込むためのクラス
+*/
+.youtube {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+}
+
+.youtube iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+}
+
+/*  Top  */
 
 .top-section {
     margin-top: 56px;
@@ -19,7 +229,12 @@ header {
     background-repeat: no-repeat;
 }
 
-.top-section h1 {
+.top-filter {
+    background-color: rgba(0, 0, 0, .6);
+    height: 100%;
+}
+
+.top-filter span {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -29,4 +244,16 @@ header {
     text-align: center;
     color: #ffffff;
     font-size: 64px;
+    font-weight: bold;
+}
+
+/*  Main  */
+main {
+    width: 80%;
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+main section {
+    padding: 48px 0;
 }
