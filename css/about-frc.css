@@ -110,7 +110,7 @@ img.large {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    margin: 8px 0;
+    margin: 16px 0;
 }
 
 .third div:first-child {
@@ -257,10 +257,28 @@ main {
 }
 
 .h1-section {
-    padding: 48px 0;
+    padding: 56px 0 0;
 }
 
 .h2-section {
-    padding: 16px 0;
+    padding: 16px 0 0;
 }
 
+/*  01.FRCとは  */
+
+.swiper-container {
+    margin: 16px 0;
+}
+
+.swiper-pagination {
+    margin-bottom: 16px;
+}
+
+/*  Responsive  */
+
+@media screen and (max-width: 1024px) {
+    .swiper-button-white {
+        padding: 4px;
+        background-color: rgba(0, 0, 0, .3);
+    }
+}
