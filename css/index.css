@@ -48,8 +48,8 @@
     -webkit-transition: 0.2s;
 }
 
-.top-scroll-hint:active {
-    background-color: rgba(0, 0, 0, .05);
+.top-scroll-hint:hover {
+    background-color: rgba(0, 0, 0, .08);
 }
 
 .top-filter:after {
