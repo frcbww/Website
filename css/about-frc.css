@@ -1,485 +1,3 @@
-header {
-    margin-top: -56px;
-}
-
-h1 {
-    position: relative;
-    padding: 8px 0 8px 160px;
-    border-bottom: 3px solid #212121;
-    font-size: 32px;
-    line-height: 1.4;
-    margin-bottom: 32px;
-    color: #212121;
-}
-
-h1 span {
-    font-family: 'Roboto', sans-serif;
-    font-size: 64px;
-    position: absolute;
-    left: 0;
-    bottom: -16px;
-    color: #212121;
-}
-
-h2 {
-    position: relative;
-    border-bottom: 3px double #212121;
-    padding-bottom: 4px;
-    padding-left: 4px;
-    line-height: 1.4;
-    margin-bottom: 20px;
-    font-size: 24px;
-}
-
-p {
-    line-height: 2;
-    font-size: 16px;
-}
-
-strong {
-    font-size: 20px;
-    background: linear-gradient(transparent 60%, #FFCC80 60%);
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-table th, table td {
-    padding: 10px 0;
-    text-align: center;
-}
-
-table tr:nth-child(odd) {
-    background-color: #eee
-}
-
-ul.design {
-    padding: 8px 0 8px 40px;
-    position: relative;
-}
-
-ul.design li {
-    line-height: 1.5;
-    padding: 8px 0;
-    list-style-type: none !important;
-}
-
-ul.design li:not(.none):before {
-    content: "◆";
-    position: absolute;
-    left: 8px;
-    color: #757575;
-}
-
-ol.design {
-    padding: 8px 0 8px 40px;
-    position: relative;
-    counter-reset: number;
-}
-
-ol.design li {
-    line-height: 1.5;
-    padding: 8px 0;
-    list-style-type: none !important;
-}
-
-ol.design li:not(.none):before {
-    counter-increment: number;
-    content: counter(number) '.';
-    position: absolute;
-    font-size: 14px;
-    width: 25px;
-    line-height: 25px;
-    text-align: center;
-    left: 4px;
-    color: #424242;
-}
-
-img {
-    display: block;
-    width: 100%;
-    margin: 16px 0;
-}
-
-/*
-    画像の大まかなサイズを指定できるクラス
-*/
-img.small {
-    width: 40%;
-}
-
-img.medium {
-    width: 60%;
-}
-
-img.large {
-    width: 80%;
-}
-
-/*
-    row: ２つの画像を均等に並べるクラス
-
-    <div class="row">
-        <img src="image1.png" alt="">
-        <img src="image2.png" alt="">
-    </div>
-*/
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
-    margin: 16px 0;
-}
-
-.row img {
-    display: inline-block;
-    width: 49.2%;
-    margin: 0
-}
-
-.row div {
-    display: inline-block;
-    width: 49.2%;
-}
-
-/*
-    third: ３つの画像をいい感じに並べるクラス
-    ※ 現在3:2の比率の画像のみ対応
-
-    <div class="third">
-        <div class="youtube">
-            <iframe src=""></iframe>
-        </div>
-        <div class="col">
-            <img src="image1.jpg" alt="">
-            <img src="image2.jpg" alt="">
-        </div>
-    </div>
-*/
-.third {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    margin: 16px 0;
-}
-
-.third div:first-child {
-    width: 150%;
-    margin: 0 16px 0 0;
-}
-
-.third .youtube {
-    padding-bottom: 39.5%;
-}
-
-.third div:first-child img {
-    margin: 0;
-}
-
-.third div:last-child {
-    flex-direction: column;
-    width: 61%;
-}
-
-.third div:last-child img {
-    margin: 0;
-}
-
-.third div:last-child img:first-child {
-    margin: 0 0 16px;
-}
-
-/*
-    four: ４つの画像を均等に並べるクラス
-
-    <div class="four">
-        <img src="image1.png" alt="">
-        <img src="image2.png" alt="">
-        <img src="image3.png" alt="">
-        <img src="image4.png" alt="">
-    </div>
-*/
-.four {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-}
-
-.four img {
-    display: inline-block;
-    width: 25%;
-}
-
-/*
-    code: ボタン用のクラス
-
-    <div class="button1"><a href="">BWWについて詳しくはこちら<i class="fas fa-arrow-right"></i></a></div>
-*/
-.button1 {
-    margin: 16px 0;
-}
-
-.button1 a {
-    display: inline-block;
-    font-size: 12px;
-    font-weight: bold;
-    color: #212121;
-    border-radius: 3px;
-    text-decoration: none;
-    transition: all 0.3s ease 0s;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    border: solid 2px #212121;
-    padding: 14px 40px;
-}
-
-.button1 a:hover {
-    background-color: #212121;
-    box-shadow: none;
-    transform: translateY(0);
-    background-color: rgba(0, 0, 0, .05);
-}
-
-.button1 i {
-    margin-left: 8px;
-}
-
-.button2 {
-    margin: 8px 0;
-}
-
-.button2 a {
-    display: inline-block;
-    font-size: 16px;
-    font-weight: bold;
-    color: #41B3BF;
-    text-decoration: none;
-    line-height: 1;
-}
-
-.button2 a:hover {
-    border-bottom: solid 1px #41B3BF;
-}
-
-.button2 i {
-    font-size: 12px;
-    margin-left: 8px;
-    vertical-align: 1px;
-}
-
-/*
-    code: コードスタイルを適用できるクラス
-
-    <div class="code">
-        <code>
-            int i;<br>
-            for (i = 0; i < 10; i++) {<br>
-                printf("BWW");<br>
-            }
-        </code>
-    </div>
-*/
-.code {
-    color: #FAFAFA;
-    background-color: #212121;
-    padding: 16px 40px 20px;
-    margin-bottom: 16px;
-    overflow-x: auto;
-}
-
-code {
-    white-space: nowrap;
-}
-
-
-/*
-    box: 囲み枠が作れるクラス
-
-    <div class="box">
-        <h3>いかがでしたか</h3>
-        <p>
-            つまりBWWとはFRCチームだということです<br>
-        </p>
-    </div>
-*/
-.box1 {
-    margin: 24px 0;
-    background: #E0F7FA;
-}
-
-.box1 h3 {
-    font-size: 20px;
-    background: #41B3BF;
-    padding: 8px 20px;
-    color: #ffffff;
-    font-weight: bold;
-}
-
-.box1 p {
-    font-size: 16px;
-    padding: 16px 20px;
-}
-
-.box1-2 {
-    width: 40%;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
-}
-
-.box1-2 h3 {
-    font-size: 16px;
-    background-color: #ffffff;
-    padding: 16px 0;
-    color: #212121;
-    text-align: center;
-}
-
-.box1-2 div {
-    margin: 0;
-}
-
-/*
-    box2: 囲み枠が作れるクラス２
-
-    <div class="box2">
-        <div class="left">
-            <h3><span>1.</span>BWWについて</h3>
-            <p>
-                BWWとはFRCチームです。
-            </p>
-        </div>
-        <img src="../img/about-frc/image.jpg" alt="">
-    </div>
-*/
-.box2 {
-    display: flex;
-    padding: 8px 0;
-}
-
-.box2 .left, .right {
-    margin: auto;
-    width: 48%;
-}
-
-.box2 .left {
-    margin-right: 8%;
-}
-
-.box2 .right {
-    margin-left: 8%;
-}
-
-.box2 h3 {
-    font-size: 24px;
-    padding-bottom: 24px;
-    font-weight: bold;
-}
-
-.box2 h3 span {
-    color: #41B3BF;
-    padding-right: 16px;
-}
-
-.box2 p {
-    font-size: 16px;
-}
-
-.box2 img {
-    width: 40%;
-}
-
-
-/*
-    YouTube動画をiframeで埋め込むためのクラス
-*/
-.youtube {
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-bottom: 56.25%;
-    overflow: hidden;
-    margin: 16px 0;
-}
-
-.youtube iframe {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border: none;
-}
-
-.youtube.small {
-    width: 40%;
-    padding-bottom: 22.5%;
-}
-
-.youtube.medium {
-    width: 60%;
-    padding-bottom: 33.75%;
-}
-
-.youtube.large {
-    width: 80%;
-    padding-bottom: 45%;
-
-}
-
-/*  Top  */
-
-.top-section {
-    margin-top: 56px;
-    position: relative;
-    height: 320px;
-    background-image: url("../img/common/top.jpg");
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.top-filter {
-    background-color: rgba(0, 0, 0, .6);
-    height: 100%;
-}
-
-.top-filter h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateY(-50%) translateX(-50%);
-    -webkit-transform: translateY(-50%) translateX(-50%);
-    width: 64%;
-    text-align: center;
-    color: #ffffff;
-    font-size: 64px;
-    font-weight: bold;
-    padding: 0;
-    border-bottom: none;
-    line-height: initial;
-    margin-bottom: 0;
-}
-
-/*  Main  */
-
-main {
-    width: 80%;
-    max-width: 1120px;
-    margin: 16px auto;
-}
-
-.h1-section {
-    padding-top: 40px;
-    margin-bottom: 40px;
-}
-
-.h2-section {
-    padding-top: 16px;
-    margin-bottom: 32px;
-}
-
 /*  01.FRCとは  */
 
 .swiper-container {
@@ -517,8 +35,23 @@ iframe.makuake {
     margin: 16px 0 0;
     border: none;
     overflow: hidden;
+}
+
+iframe.makuake.hero {
     width: 1000px;
     height: 287px;
+}
+
+iframe.makuake.wide {
+    display: none;
+    width: 480px;
+    height: 240px;
+}
+
+iframe.makuake.mini {
+    display: none;
+    width: 330px;
+    height: 430px;
 }
 
 /*  04.より詳しく知りたい方はこちら  */
@@ -531,9 +64,29 @@ iframe.makuake {
 
 /*  Responsive  */
 
+@media screen and (max-width: 1128px) {
+    iframe.makuake.hero {
+        display: none;
+    }
+
+    iframe.makuake.wide {
+        display: initial;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .swiper-button-white {
         padding: 4px;
         background-color: rgba(0, 0, 0, .3);
+    }
+}
+
+@media screen and (max-width: 540px) {
+    iframe.makuake.wide {
+        display: none;
+    }
+
+    iframe.makuake.mini {
+        display: initial;
     }
 }
