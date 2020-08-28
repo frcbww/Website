@@ -174,29 +174,77 @@ code {
     box: 囲み枠が作れるクラス
 
     <div class="box">
-        <div class="box-title">いかがでしたか</div>
+        <h3>いかがでしたか</h3>
         <p>
             つまりBWWとはFRCチームだということです<br>
         </p>
     </div>
 */
-.box {
+.box1 {
     margin: 24px 0;
     background: #E0F7FA;
 }
 
-.box .box-title {
+.box1 h3 {
     font-size: 20px;
-    background: #26C6DA;
+    background: #41B3BF;
     padding: 8px 20px;
     color: #ffffff;
     font-weight: bold;
 }
 
-.box p {
+.box1 p {
     font-size: 16px;
     padding: 16px 20px;
 }
+
+/*
+    box2: 囲み枠が作れるクラス2
+
+    <div class="box">
+        <h3>いかがでしたか</h3>
+        <p>
+            つまりBWWとはFRCチームだということです<br>
+        </p>
+    </div>
+*/
+.box2 {
+    display: flex;
+    padding: 24px 0;
+}
+
+.box2 .left, .right {
+    margin: auto;
+    width: 48%;
+}
+
+.box2 .left {
+    margin-right: 8%;
+}
+
+.box2 .right {
+    margin-left: 8%;
+}
+
+.box2 h3 {
+    font-size: 24px;
+    padding-bottom: 24px;
+    font-weight: bold;
+}
+
+.box2 h3 span {
+    color: #41B3BF;
+    padding-right: 16px;
+}
+
+.box2 p {
+    font-size: 16px;
+}
+
+.box2 img {
+    width: 40%;
+}
+
 
 /*
     YouTube動画をiframeで埋め込むためのクラス
@@ -257,11 +305,13 @@ main {
 }
 
 .h1-section {
-    padding: 56px 0 0;
+    padding-top: 40px;
+    margin-bottom: 40px;
 }
 
 .h2-section {
-    padding: 16px 0 0;
+    padding-top: 16px;
+    margin-bottom: 32px;
 }
 
 /*  01.FRCとは  */
