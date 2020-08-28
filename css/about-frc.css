@@ -36,6 +36,11 @@ p {
     font-size: 16px;
 }
 
+strong {
+    font-size: 24px;
+    background: linear-gradient(transparent 60%, #B2EBF2 60%);
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -54,18 +59,18 @@ table tr:nth-child(odd) {
 img {
     display: block;
     width: 100%;
-    margin-bottom: 16px;
+    margin: 16px 0;
 }
 
 /*
     画像の大まかなサイズを指定できるクラス
 */
 img.small {
-    width: 400px;
+    width: 40%;
 }
 
 img.medium {
-    width: 500px;
+    width: 60%;
 }
 
 img.large {
@@ -85,9 +90,16 @@ img.large {
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-between;
+    margin: 16px 0;
 }
 
 .row img {
+    display: inline-block;
+    width: 49.2%;
+    margin: 0
+}
+
+.row div {
     display: inline-block;
     width: 49.2%;
 }
@@ -116,12 +128,16 @@ img.large {
 .third div:first-child {
     width: 150%;
     padding-bottom: 42%;
-    margin-right: 16px;
+    margin: 0 16px 0 0;
 }
 
 .third div:last-child {
     flex-direction: column;
     width: 66.8%;
+}
+
+.third div:last-child img {
+    margin: 0 0 16px;
 }
 
 /*
@@ -199,18 +215,21 @@ code {
 }
 
 /*
-    box2: 囲み枠が作れるクラス2
+    box2: 囲み枠が作れるクラス２
 
-    <div class="box">
-        <h3>いかがでしたか</h3>
-        <p>
-            つまりBWWとはFRCチームだということです<br>
-        </p>
+    <div class="box2">
+        <div class="left">
+            <h3><span>1.</span>BWWについて</h3>
+            <p>
+                BWWとはFRCチームです。
+            </p>
+        </div>
+        <img src="../img/about-frc/image.jpg" alt="">
     </div>
 */
 .box2 {
     display: flex;
-    padding: 24px 0;
+    padding: 8px 0;
 }
 
 .box2 .left, .right {
@@ -255,6 +274,7 @@ code {
     height: 0;
     padding-bottom: 56.25%;
     overflow: hidden;
+    margin: 16px 0;
 }
 
 .youtube iframe {
@@ -264,6 +284,22 @@ code {
     top: 0;
     left: 0;
     border: none;
+}
+
+.youtube.small {
+    width: 40%;
+    padding-bottom: 22.5%;
+}
+
+.youtube.medium {
+    width: 60%;
+    padding-bottom: 33.75%;
+}
+
+.youtube.large {
+    width: 80%;
+    padding-bottom: 45%;
+
 }
 
 /*  Top  */
@@ -322,6 +358,27 @@ main {
 
 .swiper-pagination {
     margin-bottom: 16px;
+}
+
+/*  03.日本で開催されているロボコンとの違い  */
+
+.quote-youtube {
+    margin: 24px 0 40px;
+}
+
+.quote-youtube p {
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+
+.quote-youtube p:before {
+    content: "▼";
+    margin-right: 6px;
+    font-size: 11px;
+}
+
+.quote-youtube div {
+    margin: 0;
 }
 
 /*  Responsive  */
