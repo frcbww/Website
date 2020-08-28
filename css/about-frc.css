@@ -37,7 +37,7 @@ p {
 }
 
 strong {
-    font-size: 24px;
+    font-size: 20px;
     background: linear-gradient(transparent 60%, #B2EBF2 60%);
 }
 
@@ -127,16 +127,24 @@ img.large {
 
 .third div:first-child {
     width: 150%;
-    padding-bottom: 42%;
+    padding-bottom: 39.5%;
     margin: 0 16px 0 0;
+}
+
+.third div:first-child img {
+    margin: 0;
 }
 
 .third div:last-child {
     flex-direction: column;
-    width: 66.8%;
+    width: 61%;
 }
 
 .third div:last-child img {
+    margin: 0;
+}
+
+.third div:last-child img:first-child {
     margin: 0 0 16px;
 }
 
@@ -379,6 +387,34 @@ main {
 
 .quote-youtube div {
     margin: 0;
+}
+
+/*  04.必要な資金について  */
+
+ul.square {
+    padding: 8px 16px 8px 40px;
+    position: relative;
+}
+
+ul.square li {
+    line-height: 1.5;
+    padding: 8px 0;
+    list-style-type: none !important;
+}
+
+ul.square li:not(.none):before {
+    content: "◆";
+    position: absolute;
+    left: 8px;
+    color: #757575;
+}
+
+iframe.makuake {
+    margin: 16px 0 0;
+    border: none;
+    overflow: hidden;
+    width: 1000px;
+    height: 287px;
 }
 
 /*  Responsive  */
