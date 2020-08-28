@@ -467,7 +467,7 @@ code {
 main {
     width: 80%;
     max-width: 1120px;
-    margin: 0 auto;
+    margin: 16px auto;
 }
 
 .h1-section {
