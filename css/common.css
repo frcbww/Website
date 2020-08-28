@@ -268,6 +268,7 @@ header > a {
 .footer-upper-bottom a {
     color: #ffffff;
     padding: 4px 11px;
+    font-size: 12px;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     transition: 0.2s;
     -o-transition: 0.2s;
@@ -285,6 +286,7 @@ header > a {
 
 .footer-upper-right nav p {
     color: #ffffff;
+    font-size: 12px;
 }
 
 .vertical-line {
