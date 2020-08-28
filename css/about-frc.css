@@ -323,6 +323,23 @@ code {
     padding: 16px 20px;
 }
 
+.box1-2 {
+    width: 40%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
+}
+
+.box1-2 h3 {
+    font-size: 16px;
+    background-color: #ffffff;
+    padding: 16px 0;
+    color: #212121;
+    text-align: center;
+}
+
+.box1-2 div {
+    margin: 0;
+}
+
 /*
     box2: 囲み枠が作れるクラス２
 
@@ -502,6 +519,14 @@ iframe.makuake {
     overflow: hidden;
     width: 1000px;
     height: 287px;
+}
+
+/*  04.より詳しく知りたい方はこちら  */
+
+.youtube-flex {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0 40px;
 }
 
 /*  Responsive  */
