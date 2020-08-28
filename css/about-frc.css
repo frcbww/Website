@@ -38,7 +38,7 @@ p {
 
 strong {
     font-size: 20px;
-    background: linear-gradient(transparent 60%, #B2EBF2 60%);
+    background: linear-gradient(transparent 60%, #FFCC80 60%);
 }
 
 table {
@@ -212,6 +212,62 @@ img.large {
 .four img {
     display: inline-block;
     width: 25%;
+}
+
+/*
+    code: ボタン用のクラス
+
+    <div class="button1"><a href="">BWWについて詳しくはこちら<i class="fas fa-arrow-right"></i></a></div>
+*/
+.button1 {
+    margin: 16px 0;
+}
+
+.button1 a {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    color: #212121;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    border: solid 2px #212121;
+    padding: 14px 40px;
+}
+
+.button1 a:hover {
+    background-color: #212121;
+    box-shadow: none;
+    transform: translateY(0);
+    background-color: rgba(0, 0, 0, .05);
+}
+
+.button1 i {
+    margin-left: 8px;
+}
+
+.button2 {
+    margin: 8px 0;
+}
+
+.button2 a {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #41B3BF;
+    text-decoration: none;
+    line-height: 1;
+}
+
+.button2 a:hover {
+    border-bottom: solid 1px #41B3BF;
+}
+
+.button2 i {
+    font-size: 12px;
+    margin-left: 8px;
+    vertical-align: 1px;
 }
 
 /*

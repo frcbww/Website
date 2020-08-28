@@ -5,6 +5,10 @@
     touch-action: manipulation;
 }
 
+a:link {
+    color: #41B3BF;
+}
+
 /*  Header  */
 
 header {
