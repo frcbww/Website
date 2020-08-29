@@ -451,7 +451,7 @@ code {
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
     -webkit-transform: translateY(-50%) translateX(-50%);
-    width: 64%;
+    width: 80%;
     text-align: center;
     color: #ffffff;
     font-size: 64px;
@@ -492,6 +492,10 @@ main {
     h1 span {
         font-size: 56px;
     }
+
+    .top-filter h1 {
+        font-size: 56px;
+    }
 }
 
 @media screen and (max-width: 680px) {
@@ -499,10 +503,58 @@ main {
         padding-left: 88px;
         font-size: 24px;
         padding-bottom: 2px;
+        margin-bottom: 24px;
     }
 
     h1 span {
         font-size: 40px;
         bottom: -8px;
+    }
+
+    h2 {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+
+    .top-filter h1 {
+        font-size: 48px;
+    }
+
+    .h1-section {
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .h2-section {
+        padding-top: 4px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    h1 {
+        padding-left: 64px;
+        font-size: 20px;
+        padding-bottom: 0;
+    }
+
+    h1 span {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .top-filter h1 {
+        font-size: 40px;
+    }
+
+    .h1-section {
+        padding-top: 12px;
+        margin-bottom: 12px;
+    }
+
+    .h2-section {
+        padding-top: 0;
     }
 }
