@@ -54,6 +54,12 @@ iframe.makuake.mini {
     height: 430px;
 }
 
+iframe.makuake.length {
+    display: none;
+    width: 180px;
+    height: 470px;
+}
+
 /*  04.より詳しく知りたい方はこちら  */
 
 .youtube-flex {
@@ -87,6 +93,16 @@ iframe.makuake.mini {
     }
 
     iframe.makuake.mini {
+        display: initial;
+    }
+}
+
+@media screen and (max-width: 400px){
+    iframe.makuake.mini {
+        display: none;
+    }
+
+    iframe.makuake.length {
         display: initial;
     }
 }
