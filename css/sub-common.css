@@ -556,6 +556,7 @@ main {
         font-size: 24px;
         padding-bottom: 2px;
         margin-bottom: 24px;
+        line-height: 1.6;
     }
 
     h1 span {
@@ -566,6 +567,14 @@ main {
     h2 {
         font-size: 20px;
         margin-bottom: 16px;
+    }
+
+    ul.design li {
+        padding: 4px 0;
+    }
+
+    ol.design li {
+        padding: 4px 0;
     }
 
     img {
@@ -586,6 +595,19 @@ main {
         width: 100%;
     }
 
+    .box2 {
+        padding-top: 4px;
+    }
+
+    .box2 h3 {
+        font-size: 20px;
+        padding-bottom: 12px;
+    }
+
+    .box2 h3:before {
+        font-size: 20px;
+    }
+
     .box2 img {
         width: 100%;
         min-width: initial;
@@ -597,7 +619,8 @@ main {
     }
 
     .top-filter h1 {
-        font-size: 48px;
+        width: 90%;
+        font-size: 52px;
     }
 
     .h1-section {
@@ -606,7 +629,7 @@ main {
     }
 
     .h2-section {
-        padding-top: 4px;
+        padding-top: 8px;
     }
 
     main {
@@ -646,14 +669,40 @@ main {
 
     h1 span {
         font-size: 32px;
+        bottom: -4px;
     }
 
     h2 {
         font-size: 18px;
     }
 
+    ul.design {
+        padding: 8px 0 8px 28px;
+    }
+
+    ul.design li:not(.none):before {
+        left: 2px;
+    }
+
+    ol.design {
+        padding: 8px 0 8px 28px;
+    }
+
+    ol.design li:not(.none):before {
+        left: 0;
+    }
+
+    .box2 h3 {
+        font-size: 18px;
+        padding-bottom: 8px;
+    }
+
+    .box2 h3:before {
+        font-size: 18px;
+    }
+
     .top-filter h1 {
-        font-size: 40px;
+        font-size: 44px;
     }
 
     .h1-section {
@@ -662,6 +711,6 @@ main {
     }
 
     .h2-section {
-        padding-top: 0;
+        padding-top: 4px;
     }
 }

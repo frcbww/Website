@@ -54,12 +54,6 @@ iframe.makuake.mini {
     height: 430px;
 }
 
-iframe.makuake.length {
-    display: none;
-    width: 180px;
-    height: 470px;
-}
-
 /*  04.より詳しく知りたい方はこちら  */
 
 .youtube-flex {
@@ -109,7 +103,7 @@ iframe.makuake.length {
         padding: 0;
     }
 
-    .youtube-flex div {
+    .youtube-flex > div {
         width: 100%;
         margin: 10px 0 30px;
     }
@@ -118,6 +112,10 @@ iframe.makuake.length {
 @media screen and (max-width: 540px) {
     .swiper-container {
         margin: 8px 0;
+    }
+
+    .swiper-button-prev, .swiper-button-next {
+        transform: scale(0.8);
     }
 
     iframe.makuake.wide {
@@ -130,11 +128,12 @@ iframe.makuake.length {
 }
 
 @media screen and (max-width: 400px){
-    iframe.makuake.mini {
-        display: none;
+    .swiper-button-prev, .swiper-button-next {
+        transform: scale(0.7);
     }
 
-    iframe.makuake.length {
-        display: initial;
+    iframe.makuake.mini {
+        width: 100%;
+        height: 450px;
     }
 }
