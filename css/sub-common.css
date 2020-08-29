@@ -181,6 +181,7 @@ img.large {
 }
 
 .third div:last-child {
+    display: flex;
     flex-direction: column;
     width: 61%;
 }
@@ -493,6 +494,28 @@ main {
         font-size: 56px;
     }
 
+    .third {
+        flex-direction: column;
+    }
+
+    .third div:first-child {
+        width: 100%;
+        margin: 0 0 16px;
+    }
+
+    .third .youtube {
+        padding-bottom: 56%;
+    }
+
+    .third div:last-child {
+        flex-direction: row;
+        width: calc(50% - 8px);
+    }
+
+    .third div:last-child img:first-child {
+        margin: 0 16px 0 0;
+    }
+
     .top-filter h1 {
         font-size: 56px;
     }
@@ -500,7 +523,7 @@ main {
 
 @media screen and (max-width: 680px) {
     h1 {
-        padding-left: 88px;
+        padding-left: 96px;
         font-size: 24px;
         padding-bottom: 2px;
         margin-bottom: 24px;
@@ -527,6 +550,12 @@ main {
 
     .h2-section {
         padding-top: 4px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    h1 {
+        padding-left: 80px;
     }
 }
 
