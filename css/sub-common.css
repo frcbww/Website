@@ -572,9 +572,28 @@ main {
         margin: 8px 0;
     }
 
+    .row {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .row img {
+        width: 100%;
+        margin: 8px 0;
+    }
+
+    .row div {
+        width: 100%;
+    }
+
     .box2 img {
         width: 100%;
         min-width: initial;
+    }
+
+    .youtube.large {
+        width: 100%;
+        padding-bottom: 56.25%;
     }
 
     .top-filter h1 {
@@ -600,23 +619,8 @@ main {
         padding-left: 80px;
     }
 
-    .youtube.large {
-        width: 100%;
-        padding-bottom: 56.25%;
-    }
-
-    .row {
-        flex-direction: column;
-        margin: 0;
-    }
-
-    .row img {
-        width: 100%;
-        margin: 8px 0;
-    }
-
-    .row div {
-        width: 100%;
+    strong {
+        font-size: 18px;
     }
 
     .third {

@@ -32,7 +32,7 @@
 /*  04.必要な資金について  */
 
 iframe.makuake {
-    margin: 16px 0 0;
+    margin: 16px 0 32px;
     border: none;
     overflow: hidden;
 }
@@ -71,6 +71,10 @@ iframe.makuake.length {
 /*  Responsive  */
 
 @media screen and (max-width: 1128px) {
+    iframe.makuake {
+        margin: 16px 0 0;
+    }
+
     iframe.makuake.hero {
         display: none;
     }
