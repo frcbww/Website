@@ -677,7 +677,7 @@ main {
     }
 
     ul.design {
-        padding: 8px 0 8px 28px;
+        padding: 8px 0 8px 30px;
     }
 
     ul.design li:not(.none):before {
@@ -685,7 +685,7 @@ main {
     }
 
     ol.design {
-        padding: 8px 0 8px 28px;
+        padding: 8px 0 8px 30px;
     }
 
     ol.design li:not(.none):before {
