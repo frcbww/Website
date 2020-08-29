@@ -68,6 +68,10 @@ iframe.makuake.length {
     padding: 20px 0 40px;
 }
 
+.youtube-flex div {
+    min-width: 400px;
+}
+
 /*  Responsive  */
 
 @media screen and (max-width: 1128px) {
@@ -88,6 +92,26 @@ iframe.makuake.length {
     .swiper-button-white {
         padding: 4px;
         background-color: rgba(0, 0, 0, .3);
+    }
+
+    .youtube-flex {
+        padding: 16px 0 32px;
+    }
+
+    .youtube-flex div {
+        min-width: initial;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .youtube-flex {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .youtube-flex div {
+        width: 100%;
+        margin: 10px 0 30px;
     }
 }
 
