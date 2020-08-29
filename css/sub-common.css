@@ -136,13 +136,11 @@ img.large {
 }
 
 .row img {
-    display: inline-block;
     width: 49.2%;
     margin: 0
 }
 
 .row div {
-    display: inline-block;
     width: 49.2%;
 }
 
@@ -295,7 +293,6 @@ code {
     white-space: nowrap;
 }
 
-
 /*
     box: 囲み枠が作れるクラス
 
@@ -394,7 +391,6 @@ code {
 .box2 img {
     width: 40%;
 }
-
 
 /*
     YouTube動画をiframeで埋め込むためのクラス
@@ -593,6 +589,10 @@ main {
     .h2-section {
         padding-top: 4px;
     }
+
+    main {
+        margin: 8px auto;
+    }
 }
 
 @media screen and (max-width: 540px) {
@@ -603,6 +603,24 @@ main {
     .youtube.large {
         width: 100%;
         padding-bottom: 56.25%;
+    }
+
+    .row {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .row img {
+        width: 100%;
+        margin: 8px 0;
+    }
+
+    .row div {
+        width: 100%;
+    }
+
+    .third {
+        margin: 8px 0;
     }
 
     .third div:last-child {

@@ -88,6 +88,10 @@ iframe.makuake.length {
 }
 
 @media screen and (max-width: 540px) {
+    .swiper-container {
+        margin: 8px 0;
+    }
+
     iframe.makuake.wide {
         display: none;
     }
