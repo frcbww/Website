@@ -479,3 +479,30 @@ main {
     padding-top: 16px;
     margin-bottom: 32px;
 }
+
+/*  Responsive  */
+
+@media screen and (max-width: 1024px) {
+    h1 {
+        padding-left: 120px;
+        font-size: 28px;
+        padding-bottom: 4px;
+    }
+
+    h1 span {
+        font-size: 56px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    h1 {
+        padding-left: 88px;
+        font-size: 24px;
+        padding-bottom: 2px;
+    }
+
+    h1 span {
+        font-size: 40px;
+        bottom: -8px;
+    }
+}
