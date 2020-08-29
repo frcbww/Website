@@ -555,7 +555,7 @@ main {
         padding-left: 96px;
         font-size: 24px;
         padding-bottom: 2px;
-        margin-bottom: 24px;
+        margin-bottom: 16px;
         line-height: 1.6;
     }
 
@@ -625,11 +625,11 @@ main {
 
     .h1-section {
         padding-top: 20px;
-        margin-bottom: 20px;
     }
 
     .h2-section {
-        padding-top: 8px;
+        padding-top: 20px;
+        margin-bottom: 32px;
     }
 
     main {
@@ -703,14 +703,5 @@ main {
 
     .top-filter h1 {
         font-size: 44px;
-    }
-
-    .h1-section {
-        padding-top: 12px;
-        margin-bottom: 12px;
-    }
-
-    .h2-section {
-        padding-top: 4px;
     }
 }
