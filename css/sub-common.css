@@ -344,11 +344,11 @@ code {
 /*
     box2: 囲み枠が作れるクラス２
 
-    <div class="box2">
-        <div class="left">
+    <div class="box2 left">
+        <div>
             <h3><span>1.</span>BWWについて</h3>
             <p>
-                BWWとはFRCチームです。
+                BWWとはFRCチームです
             </p>
         </div>
         <img src="../img/about-frc/image.jpg" alt="">
@@ -359,16 +359,20 @@ code {
     padding: 8px 0;
 }
 
-.box2 .left, .right {
+.box2.right {
+    flex-direction: row-reverse;
+}
+
+.box2 div {
     margin: auto;
     width: 48%;
 }
 
-.box2 .left {
+.box2.left div {
     margin-right: 8%;
 }
 
-.box2 .right {
+.box2.right div {
     margin-left: 8%;
 }
 
@@ -426,7 +430,6 @@ code {
 .youtube.large {
     width: 80%;
     padding-bottom: 45%;
-
 }
 
 /*  Top  */
@@ -516,6 +519,36 @@ main {
         margin: 0 16px 0 0;
     }
 
+    .box2 {
+        flex-direction: column;
+        padding: 16px 0;
+    }
+
+    .box2.right {
+        flex-direction: column;
+    }
+
+    .box2 div {
+        width: 100%;
+    }
+
+    .box2.left div {
+        margin-right: 0;
+    }
+
+    .box2.right div {
+        margin-left: 0;
+    }
+
+    .box2 h3 {
+        padding-bottom: 16px;
+    }
+
+    .box2 img {
+        width: 72%;
+        min-width: 540px;
+    }
+
     .top-filter h1 {
         font-size: 56px;
     }
@@ -539,6 +572,15 @@ main {
         margin-bottom: 16px;
     }
 
+    img {
+        margin: 8px 0;
+    }
+
+    .box2 img {
+        width: 100%;
+        min-width: initial;
+    }
+
     .top-filter h1 {
         font-size: 48px;
     }
@@ -556,6 +598,20 @@ main {
 @media screen and (max-width: 540px) {
     h1 {
         padding-left: 80px;
+    }
+
+    .youtube.large {
+        width: 100%;
+        padding-bottom: 56.25%;
+    }
+
+    .third div:last-child {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .third div:last-child img:first-child {
+        margin: 0 0 16px 0;
     }
 }
 
