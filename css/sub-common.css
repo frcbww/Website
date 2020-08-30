@@ -182,6 +182,7 @@ img.large {
     display: flex;
     flex-direction: column;
     width: 61%;
+    height: auto;
 }
 
 .third div:last-child img {
@@ -363,6 +364,7 @@ code {
 .box2 div {
     margin: auto;
     width: 48%;
+    height: auto;
 }
 
 .box2.left div {
