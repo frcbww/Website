@@ -440,10 +440,17 @@ code {
     margin-top: 56px;
     position: relative;
     height: 320px;
-    background-image: url("../img/common/top.jpg");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.no-webp .top-section {
+    background-image: url("../img/common/top.jpg");
+}
+
+.webp .top-section {
+    background-image: url("../img/common/webp/top.webp");
 }
 
 .top-filter {
