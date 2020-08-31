@@ -15,9 +15,14 @@ window.onresize = function () {
     }
 }
 
-$(function () {
+$(document).ready(function () {
     // スクロールボタン
-    $(".top-scroll-hint").on("click", function () {
-        $("html").animate({scrollTop: $(".top-section")[0].scrollHeight - 56}, 500, "easeOutQuad");
-    })
+    document.getElementsByClassName('top-scroll-hint')[0].addEventListener('click', function () {
+        anime({
+            targets: "html",
+            scrollTop: document.getElementsByClassName('top-section')[0].scrollHeight - 56,
+            duration: 600,
+            easing: 'easeOutQuad',
+        });
+    });
 });
