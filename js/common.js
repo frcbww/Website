@@ -1,12 +1,12 @@
 window.addEventListener('scroll', function () {
-    // // 一定以上スクロールしたらヘッダーの色を変更する
-    // const header = document.querySelector('header');
-    // const scrollTop = document.scrollingElement.scrollTop;
-    // if (scrollTop > window.innerHeight / 3) {
-    //     header.classList.add('transform');
-    // } else {
-    //     header.classList.remove('transform');
-    // }
+    // 一定以上スクロールしたらヘッダーの色を変更する
+    const header = document.querySelector('header');
+    const scrollTop = document.scrollingElement.scrollTop;
+    if (scrollTop > window.innerHeight / 3) {
+        header.classList.add('transform');
+    } else {
+        header.classList.remove('transform');
+    }
 });
 
 document.addEventListener('DOMContentLoaded', function () {
