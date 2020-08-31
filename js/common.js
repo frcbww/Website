@@ -1,12 +1,13 @@
-$(window).on('load scroll', function () {
+window.addEventListener('scroll', function () {
     // 一定以上スクロールしたらヘッダーの色を変更する
-    if ($(window).scrollTop() > $(window).height() / 3) {
-        $('header').addClass('transform');
+    const header = document.querySelector('header');
+    const scrollTop = document.scrollingElement.scrollTop;
+    if (scrollTop > window.innerHeight / 3) {
+        header.classList.add('transform');
     } else {
-        $('header').removeClass('transform');
+        header.classList.remove('transform');
     }
 });
-
 
 $(function () {
     // WebP対応ブラウザの場合パス置き換え
