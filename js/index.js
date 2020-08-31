@@ -1,14 +1,8 @@
-const isIE = (window.navigator.userAgent.toLowerCase().indexOf('msie') !== -1
-    || window.navigator.userAgent.toLowerCase().indexOf('trident') !== -1);
-
-$(window).on('load scroll', function () {
-    // 背景画像をスクロールする
-    if (!isIE) {
-        $('.content-bg').stop(true, true).animate({
-            'background-position-y': $(window).scrollTop() / 3 - 500 + 'px'
-        }, 100);
-    }
-});
+window.onscroll = function () {
+    const scrollTop = document.scrollingElement.scrollTop;
+    const content_bg = document.getElementsByClassName("content-bg")[0];
+    content_bg.style.backgroundPositionY = scrollTop / 3 - 500 + "px";
+}
 
 $(window).on('load resize', function () {
     // スマートフォン・タブレットの判別
