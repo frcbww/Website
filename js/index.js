@@ -1,8 +1,8 @@
 // 背景画像を視差効果でスクロールする
 window.onscroll = function () {
-    const scrollTop = document.scrollingElement.scrollTop;
-    const content_bg = document.getElementsByClassName("content-bg")[0];
-    content_bg.style.backgroundPositionY = scrollTop / 3 - 500 + "px";
+    // const scrollTop = document.scrollingElement.scrollTop;
+    // const content_bg = document.getElementsByClassName("content-bg")[0];
+    // content_bg.style.backgroundPositionY = scrollTop / 3 - 500 + "px";
 }
 
 window.onresize = function () {
@@ -15,7 +15,7 @@ window.onresize = function () {
     }
 }
 
-$(document).ready(function () {
+document.addEventListener('DOMContentLoaded', function() {
     // スクロールボタン
     document.getElementsByClassName('top-scroll-hint')[0].addEventListener('click', function () {
         anime({

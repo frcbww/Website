@@ -1,49 +1,62 @@
 window.addEventListener('scroll', function () {
-    // 一定以上スクロールしたらヘッダーの色を変更する
-    const header = document.querySelector('header');
-    const scrollTop = document.scrollingElement.scrollTop;
-    if (scrollTop > window.innerHeight / 3) {
-        header.classList.add('transform');
-    } else {
-        header.classList.remove('transform');
-    }
+    // // 一定以上スクロールしたらヘッダーの色を変更する
+    // const header = document.querySelector('header');
+    // const scrollTop = document.scrollingElement.scrollTop;
+    // if (scrollTop > window.innerHeight / 3) {
+    //     header.classList.add('transform');
+    // } else {
+    //     header.classList.remove('transform');
+    // }
 });
 
-$(function () {
-    // WebP対応ブラウザの場合パス置き換え
-    Modernizr.on('webp', function (result) {
-        $(".lazy").each(function () {
-            if (result) {
-                const split = $(this).attr('data-src').match(/(.*\/)?(.*?)\.(\w+)?/);
-                $(this).attr('data-src', split[1] + 'webp/' + split[2] + '.webp');
-            }
-        });
-    });
+document.addEventListener('DOMContentLoaded', function () {
+    // WebP対応ブラウザかどうか
+    const canUseWebP = (function () {
+        const elem = document.createElement('canvas');
+        if (!!(elem.getContext && elem.getContext('2d'))) {
+            return elem.toDataURL('image/webp').indexOf('data:image/webp') === 0;
+        }
+        return false;
+    })();
 
-    // 画像の遅延読み込み
-    const lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
-    if ("IntersectionObserver" in window) {
-        lazyImages.forEach(function (image) {
-                image.src = "data:image/gif;base64,R0lGODlhAQABAGAAACH5BAEKAP8ALAAAAAABAAEAAAgEAP8FBAA7";
-            }
-        )
-        let lazyImageObserver = new IntersectionObserver(function (entries, observer) {
-            entries.forEach(function (entry) {
-                if (entry.isIntersecting) {
-                    let lazyImage = entry.target;
-                    lazyImage.src = lazyImage.dataset.src;
-                    if (typeof lazyImage.dataset.srcset === "undefined") {
-                    } else {
-                        lazyImage.srcset = lazyImage.dataset.srcset;
-                    }
-                    lazyImage.classList.remove("lazy");
-                    lazyImageObserver.unobserve(lazyImage);
+    if (canUseWebP) {
+        // WebPにパス置き換え
+        const targetElements = document.getElementsByClassName('lazy');
+        [].forEach.call(targetElements, function (elem) {
+            const split = elem.getAttribute('data-src').match(/(.*\/)?(.*?)\.(\w+)?/);
+            elem.setAttribute('data-src', split[1] + 'webp/' + split[2] + '.webp')
+        });
+
+        // 画像の遅延読み込み
+        const lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
+        if ("IntersectionObserver" in window) {
+            lazyImages.forEach(function (image) {
+                    image.src = "data:image/gif;base64,R0lGODlhAQABAGAAACH5BAEKAP8ALAAAAAABAAEAAAgEAP8FBAA7";
                 }
+            )
+            let lazyImageObserver = new IntersectionObserver(function (entries, observer) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        let lazyImage = entry.target;
+                        lazyImage.src = lazyImage.dataset.src;
+                        if (typeof lazyImage.dataset.srcset === "undefined") {
+                        } else {
+                            lazyImage.srcset = lazyImage.dataset.srcset;
+                        }
+                        lazyImage.classList.remove("lazy");
+                        lazyImageObserver.unobserve(lazyImage);
+                    }
+                });
             });
-        });
 
-        lazyImages.forEach(function (lazyImage) {
-            lazyImageObserver.observe(lazyImage);
+            lazyImages.forEach(function (lazyImage) {
+                lazyImageObserver.observe(lazyImage);
+            });
+        }
+    } else {
+        const targetElements = document.getElementsByClassName('lazy');
+        [].forEach.call(targetElements, function (elem) {
+            elem.setAttribute('src', elem.getAttribute('data-src'))
         });
     }
 
