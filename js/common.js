@@ -14,17 +14,17 @@ document.addEventListener('DOMContentLoaded', function () {
     Modernizr.on('webp', function (result) {
         if (result) {
             // WebPにパス置き換え
-            const targetElements = document.getElementsByClassName('lazy');
+            const targetElements = document.querySelectorAll('img.lazy');
             [].forEach.call(targetElements, function (elem) {
                 const split = elem.getAttribute('data-src').match(/(.*\/)?(.*?)\.(\w+)?/);
                 elem.setAttribute('data-src', split[1] + 'webp/' + split[2] + '.webp')
             });
 
             // 画像の遅延読み込み
-            const lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
+            const lazyImages = [].slice.call(document.getElementsByClassName("lazy"));
             if ("IntersectionObserver" in window) {
                 lazyImages.forEach(function (image) {
-                        image.src = "data:image/gif;base64,R0lGODlhAQABAGAAACH5BAEKAP8ALAAAAAABAAEAAAgEAP8FBAA7";
+                        image.src = "data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAADklEQVQYV2NkQAKMyBwAAEEAA8aUUQIAAAAASUVORK5CYII=";
                     }
                 )
                 let lazyImageObserver = new IntersectionObserver(function (entries, observer) {
