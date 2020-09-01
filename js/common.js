@@ -40,6 +40,9 @@ document.addEventListener('DOMContentLoaded', function () {
                             lazyImageObserver.unobserve(lazyImage);
                         }
                     });
+                }, {
+                    root: null,
+                    rootMargin: "0px 0px 300px",
                 });
 
                 lazyImages.forEach(function (lazyImage) {

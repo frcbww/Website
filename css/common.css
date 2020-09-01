@@ -35,6 +35,10 @@
     touch-action: manipulation;
 }
 
+body {
+    overflow-y: scroll;
+}
+
 a:link {
     color: #41B3BF;
 }
