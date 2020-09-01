@@ -32,6 +32,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
     touch-action: manipulation;
 }
 
