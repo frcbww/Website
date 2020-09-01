@@ -55,24 +55,27 @@ document.addEventListener('DOMContentLoaded', function () {
     })
 
     // ハンバーガーメニューのクリックリスナー
-    $('.hamburger-menu').on('click', function () {
+    document.getElementsByClassName('hamburger-menu')[0].addEventListener('click', function () {
         hamburger_menu_toggle();
     });
 
     // ハンバーガーメニューの領域外クリック時にOFF切り替え
-    const trigger = $('#hm-menu-trigger');
-    $(document).on('click', function (e) {
-        if (trigger.hasClass('active') && !$(e.target).closest('header').length) {
+    const trigger = document.getElementById('hm-menu-trigger');
+    document.onclick = function (e) {
+        if (trigger.classList.contains('active') && !e.target.closest('header')) {
             hamburger_menu_toggle();
         }
-    });
+    }
 
     // ハンバーガーメニューのON・OFF切り替え
     function hamburger_menu_toggle() {
-        trigger.toggleClass('active');
-        const rightVal = (trigger.hasClass('active')) ? 0 : -325;
-        $('header nav').stop().animate({
-            right: rightVal
-        }, 200, "easeOutQuad");
+        trigger.classList.toggle('active');
+        const rightVal = trigger.classList.contains('active') ? 0 : -325;
+        anime({
+            targets: "header nav",
+            right: rightVal,
+            duration: 200,
+            easing: 'easeOutQuad',
+        });
     }
 });
