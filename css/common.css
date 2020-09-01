@@ -1,10 +1,9 @@
 @font-face {
     font-family: 'Noto Sans JP';
     font-style: normal;
-    font-weight: 500;
-    src: local('Noto Sans CJK JP'),
-    local('NotoSansCJKjp-Medium'),
-    local('NotoSansJP-Medium'),
+    font-weight: normal;
+    src: local('NotoSansCJKJP-Medium'),
+    local('NotoSansjp-Medium'),
     url('../fonts/NotoSansCJKjp-Medium.woff2') format('woff2'),
     url('../fonts/NotoSansCJKjp-Medium.woff') format('woff');
 }
@@ -12,7 +11,7 @@
 @font-face {
     font-family: 'Noto Sans JP';
     font-style: normal;
-    font-weight: 700;
+    font-weight: bold;
     src: local('NotoSansCJKjp-Bold'),
     local('NotoSansJP-Bold'),
     url('../fonts/NotoSansCJKjp-Bold.woff2') format('woff2'),
@@ -32,7 +31,6 @@
     margin: 0;
     padding: 0;
     font-family: 'Noto Sans JP', sans-serif;
-    font-weight: 500;
     touch-action: manipulation;
 }
 
