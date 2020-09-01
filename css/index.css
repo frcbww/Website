@@ -266,6 +266,7 @@
 }
 
 .content-box-image i {
+    font-size: 3em;
     display: table-cell;
     text-align: center;
     vertical-align: middle;
@@ -493,4 +494,62 @@
     .content-image img {
         min-height: 320px;
     }
+}
+
+/*  Font Awesome  */
+
+.fa-building:before {
+    content: "\f1ad";
+}
+
+.fa-envelope-open:before {
+    content: "\f2b6";
+}
+
+@-webkit-keyframes passing {
+    0% {
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+
+    50% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: translateX(50%);
+        transform: translateX(50%);
+        opacity: 0;
+    }
+}
+
+@keyframes passing {
+    0% {
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+
+    50% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: translateX(50%);
+        transform: translateX(50%);
+        opacity: 0;
+    }
+}
+
+.faa-passing.animated.faa-fast,
+.faa-passing.animated-hover.faa-fast:hover,
+.faa-parent.animated-hover:hover > .faa-passing.faa-fast:before {
+    display: inline-block;
+    -webkit-animation: passing 1s linear infinite;
+    animation: passing 1s linear infinite;
 }

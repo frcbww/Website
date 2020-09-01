@@ -1,3 +1,15 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?fcdj5a');
+    src: url('../fonts/icomoon.eot?fcdj5a#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?fcdj5a') format('truetype'),
+    url('../fonts/icomoon.woff?fcdj5a') format('woff'),
+    url('../fonts/icomoon.svg?fcdj5a#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -283,6 +295,7 @@ header > a:active {
     -o-transition: 0.2s;
     -moz-transition: 0.2s;
     -webkit-transition: 0.2s;
+    text-decoration: none;
 }
 
 .footer-upper-bottom i {
@@ -503,4 +516,42 @@ header > a:active {
     .footer-upper-right nav:first-child {
         display: none;
     }
+}
+
+/*  Font Awesome  */
+
+[class^="fa-"], [class*=" fa-"] {
+    font-family: 'icomoon', sans-serif !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-twitter:before {
+    content: "\f099";
+}
+
+.fa-github:before {
+    content: "\f09b";
+}
+
+.fa-youtube:before {
+    content: "\f167";
+}
+
+.fa-instagram:before {
+    content: "\f16d";
+}
+
+.fa-arrow-right:before {
+    content: "\f061";
+}
+
+.fa-angle-down:before {
+    content: "\f107";
 }
