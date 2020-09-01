@@ -15,7 +15,7 @@ window.onresize = function () {
     }
 }
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // スクロールボタン
     document.getElementsByClassName('top-scroll-hint')[0].addEventListener('click', function () {
         anime({
