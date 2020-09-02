@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     });
                 }, {
                     root: null,
-                    rootMargin: "0px 0px 300px",
+                    rootMargin: "0px 0px 50%",
                 });
 
                 [].forEach.call(document.getElementsByClassName('lazy'), function (lazyImage) {
