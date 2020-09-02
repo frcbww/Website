@@ -14,19 +14,14 @@ document.addEventListener('DOMContentLoaded', function () {
     Modernizr.on('webp', function (result) {
         if (result) {
             // WebPにパス置き換え
-            const targetElements = document.querySelectorAll('img.lazy');
-            [].forEach.call(targetElements, function (elem) {
-                const split = elem.getAttribute('data-src').match(/(.*\/)?(.*?)\.(\w+)?/);
-                elem.setAttribute('data-src', split[1] + 'webp/' + split[2] + '.webp')
+            [].forEach.call(document.querySelectorAll('img.lazy'), function (image) {
+                const split = image.getAttribute('data-src').match(/(.*\/)?(.*?)\.(\w+)?/);
+                image.setAttribute('data-src', split[1] + 'webp/' + split[2] + '.webp')
+                image.src = "data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAADklEQVQYV2NkQAKMyBwAAEEAA8aUUQIAAAAASUVORK5CYII=";
             });
 
             // 画像の遅延読み込み
-            const lazyImages = [].slice.call(document.getElementsByClassName("lazy"));
             if ("IntersectionObserver" in window) {
-                lazyImages.forEach(function (image) {
-                        image.src = "data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAADklEQVQYV2NkQAKMyBwAAEEAA8aUUQIAAAAASUVORK5CYII=";
-                    }
-                )
                 let lazyImageObserver = new IntersectionObserver(function (entries, observer) {
                     entries.forEach(function (entry) {
                         if (entry.isIntersecting) {
@@ -45,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     rootMargin: "0px 0px 300px",
                 });
 
-                lazyImages.forEach(function (lazyImage) {
+                [].forEach.call(document.getElementsByClassName('lazy'), function (lazyImage) {
                     lazyImageObserver.observe(lazyImage);
                 });
             }
