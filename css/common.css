@@ -2,6 +2,7 @@
     font-family: 'Noto Sans JP';
     font-style: normal;
     font-weight: 500;
+    font-display: swap;
     src: local('NotoSansCJKJP-Medium'),
     local('NotoSansjp-Medium'),
     url('../fonts/NotoSansCJKjp-Medium.woff2') format('woff2'),
@@ -12,6 +13,7 @@
     font-family: 'Noto Sans JP';
     font-style: normal;
     font-weight: bold;
+    font-display: swap;
     src: local('NotoSansCJKjp-Bold'),
     local('NotoSansJP-Bold'),
     url('../fonts/NotoSansCJKjp-Bold.woff2') format('woff2'),
