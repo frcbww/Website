@@ -287,6 +287,8 @@ header > a:active {
 
 .footer-upper-left nav a:hover {
     text-decoration: underline;
+    padding-bottom: 1px;
+    background-color: #424242;
 }
 
 .footer-upper-right {
