@@ -58,49 +58,11 @@
     font-size: 12px;
 }
 
-
 .card img {
     margin: 48px auto 40px;
     border-radius: 50%;
     width: 50%;
 }
-
-/*.aoki, .ueno, .mani {*/
-/*    position: relative;*/
-/*    width: 320px;*/
-/*    height: 400px;*/
-/*    text-align: center;*/
-/*    background-color: rgb(0, 0, 0);*/
-/*    margin: 16px;*/
-/*    z-index: 0;*/
-/*    overflow: hidden;*/
-/*}*/
-
-/*.aoki:before, .ueno:before, .mani:before {*/
-/*    content: '';*/
-/*    background-size: cover;*/
-/*    opacity: 0.6;*/
-/*    -webkit-filter: blur(5px);*/
-/*    filter: blur(5px);*/
-/*    position: absolute;*/
-/*    top: -5px;*/
-/*    left: -5px;*/
-/*    right: -5px;*/
-/*    bottom: -5px;*/
-/*    z-index: -1;*/
-/*}*/
-
-/*.aoki:before {*/
-/*    background-image: url("https://pbs.twimg.com/profile_images/1301561146697109504/EeLdhKkH_400x400.jpg");*/
-/*}*/
-
-/*.ueno:before {*/
-/*    background-image: url("https://pbs.twimg.com/profile_images/1278727265614876672/hWgZK1KT_400x400.jpg");*/
-/*}*/
-
-/*.mani:before {*/
-/*    background-image: url("https://pbs.twimg.com/profile_images/1288644553101041664/iRv5DX5f_400x400.jpg");*/
-/*}*/
 
 @media screen and (max-width: 1260px) {
     .member:before, .member:after {
