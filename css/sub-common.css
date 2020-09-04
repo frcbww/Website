@@ -102,6 +102,10 @@ ol.design li:not(.none):before {
     color: #424242;
 }
 
+li.none {
+    list-style: none !important;
+}
+
 img {
     display: block;
     width: 100%;
