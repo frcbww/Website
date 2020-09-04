@@ -20,6 +20,18 @@ table.recruiting th {
     width: 16%;
 }
 
+table.recruiting ul.design {
+    padding: 0 0 24px 0;
+}
+
+table.recruiting ul.design li {
+    padding: 2px 0;
+}
+
+table.recruiting ul.design li:not(.none):before {
+    left: -28px;
+}
+
 .map-row {
     display: flex;
     flex-wrap: wrap;
