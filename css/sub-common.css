@@ -45,18 +45,18 @@ strong {
     padding: 4px 0;
 }
 
-table {
+table.design {
     width: 100%;
     border-collapse: collapse;
     border-spacing: 0;
 }
 
-table th, table td {
+table.design th, table.design td {
     padding: 10px 0;
     text-align: center;
 }
 
-table tr:nth-child(odd) {
+table.design tr:nth-child(odd) {
     background-color: #eee
 }
 
