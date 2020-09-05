@@ -12,98 +12,26 @@ table.recruiting th, table.recruiting td {
     vertical-align: top;
 }
 
-table.no-border th, table.no-border td {
-    border-bottom: 0;
-}
-
 table.recruiting th {
     width: 16%;
 }
 
-table.recruiting ul.design {
-    padding: 0 0 24px 0;
-}
-
-table.recruiting ul.design li {
-    padding: 2px 0;
-}
-
-table.recruiting ul.design li:not(.none):before {
-    left: -28px;
-}
-
-.map-row {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-
-.map-row div:first-child {
-    width: 55%;
-}
-
-.map-row div {
-    width: 40%;
-}
-
-.map-row div a {
-    display: block;
-    margin-bottom: 24px;
-}
-
-.map-row div p {
-    color: #616161;
-}
-
-.map {
-    position: relative;
-    min-height: 200px;
-}
-
-.map iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    border: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.map:before {
-    content: "";
-    display: block;
-    padding-top: 60%;
+table.recruiting td, table.recruiting td p {
+    font-size: 14px;
 }
 
 @media screen and (max-width: 1024px) {
     table.recruiting th, table.recruiting td {
-        width:100%;
-        display:block;
+        width: 100%;
+        display: block;
     }
 
     table.recruiting th {
         border-bottom: 0;
-        padding: 32px 16px 0;
+        padding: 32px 8px 0;
     }
 
     table.recruiting td {
-        padding: 24px 16px 32px;
-    }
-
-    table.no-border th, table.no-border td {
-        padding: 0 0 16px;
-    }
-
-    .map-row {
-        flex-direction: column;
-    }
-
-    .map-row div:first-child {
-        width: 100%;
-    }
-
-    .map-row div {
-        width: 100%;
+        padding: 24px 8px 32px;
     }
 }
