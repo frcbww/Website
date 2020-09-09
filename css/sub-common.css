@@ -495,15 +495,15 @@ main {
 }
 
 .h2-section {
-    padding-top: 16px;
-    margin-bottom: 32px;
+    padding-top: 8px;
+    margin-bottom: 40px;
 }
 
 /*  Responsive  */
 
 @media screen and (max-width: 1024px) {
     h1 {
-        padding-left: 120px;
+        padding-left: 112px;
         font-size: 28px;
         padding-bottom: 4px;
     }
@@ -647,7 +647,6 @@ main {
     }
 
     .h2-section {
-        padding-top: 20px;
         margin-bottom: 32px;
     }
 
@@ -658,7 +657,7 @@ main {
 
 @media screen and (max-width: 540px) {
     h1 {
-        padding-left: 80px;
+        padding-left: 72px;
     }
 
     strong {
@@ -681,8 +680,8 @@ main {
 
 @media screen and (max-width: 400px) {
     h1 {
-        padding-left: 64px;
-        font-size: 20px;
+        padding-left: 56px;
+        font-size: 22px;
         padding-bottom: 0;
     }
 
