@@ -4,7 +4,7 @@
     position: relative;
     background-color: #757575;
     height: 100vh;
-    max-height: 170vw;
+    max-height: 177vw;
 }
 
 .top-text {
@@ -64,7 +64,7 @@
 .top-video {
     width: 100%;
     height: 100vh;
-    max-height: 170vw;
+    max-height: 177vw;
     object-fit: cover;
     object-position: center center;
 }
@@ -415,7 +415,7 @@
 @media screen and (max-width: 680px) {
     /*  Top  */
     .top-text {
-        top: 45%;
+        top: 46%;
         left: 8%;
         font-size: calc(72px + ((1vw - 0.64rem) * 5));
     }
