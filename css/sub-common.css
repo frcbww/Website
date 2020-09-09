@@ -2,10 +2,6 @@ header {
     margin-top: -56px;
 }
 
-main {
-    display: block;
-}
-
 h1 {
     position: relative;
     padding: 8px 0 8px 160px;
@@ -484,6 +480,7 @@ code {
 /*  Main  */
 
 main {
+    display: block;
     width: 80%;
     max-width: 1120px;
     margin: 16px auto;
@@ -647,15 +644,12 @@ main {
     }
 
     .h1-section {
-        padding-top: 20px;
-    }
-
-    .h2-section {
+        padding-top: 8px;
         margin-bottom: 32px;
     }
 
-    main {
-        margin: 8px auto;
+    .h2-section {
+        margin-bottom: 24px;
     }
 }
 
