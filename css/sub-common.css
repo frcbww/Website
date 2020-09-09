@@ -3,7 +3,7 @@ header {
 }
 
 main {
-    display:block;
+    display: block;
 }
 
 h1 {
@@ -562,6 +562,10 @@ main {
     .box2 img {
         width: 72%;
         min-width: 540px;
+    }
+
+    .top-section {
+        height: 240px;
     }
 
     .top-filter h1 {
