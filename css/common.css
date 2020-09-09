@@ -355,6 +355,7 @@ header > a:active {
 @media screen and (max-width: 1420px) {
     /*  Footer  */
     .footer-upper {
+        position: relative;
         height: 160px;
     }
 
@@ -363,17 +364,21 @@ header > a:active {
     }
 
     .footer-upper-right {
-        width: 100%;
+        position: absolute;
         justify-content: center;
-        margin-bottom: 32px;
+        width: 100%;
+        top: 40%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        -webkit-transform: translateY(-50%) translateX(-50%);
     }
 
     .footer-upper-right nav {
-        margin: 0 4%;
+        margin: 0 2%;
     }
 
     .footer-upper-bottom {
-        bottom: -40px;
+        bottom: -44px;
         left: 50%;
         transform: translateX(-50%);
         -webkit-transform: translateX(-50%);
@@ -515,13 +520,6 @@ header > a:active {
 
     .sub-menu-item a:hover i {
         display: none;
-    }
-}
-
-@media screen and (max-width: 680px) {
-    /*  Footer  */
-    .footer-upper-right nav {
-        margin: 0 3%;
     }
 }
 
