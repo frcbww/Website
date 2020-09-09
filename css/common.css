@@ -523,18 +523,22 @@ header > a:active {
     }
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 480px) {
     /*  Header  */
     header > a {
         margin-left: 16px;
     }
 
     /*  Footer  */
-    .footer-upper-right nav {
-        margin: 0;
+    .footer-upper-right {
+        top: 38%;
     }
 
-    .footer-upper-right nav:first-child {
+    .footer-upper-right nav {
+        margin: 0 0 2px;
+    }
+
+    .footer-upper-right nav:nth-child(2) {
         display: none;
     }
 }
