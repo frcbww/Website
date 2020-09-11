@@ -198,6 +198,22 @@ img.large {
     margin: 0 0 16px;
 }
 
+.third2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.third2 div {
+    display: inline-block;
+    width: 33.3%;
+}
+
+.third2 img {
+    display: inline-block;
+    width: 33.3%;
+}
+
 /*
     four: ４つの画像を均等に並べるクラス
 
