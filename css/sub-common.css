@@ -630,6 +630,15 @@ main {
         width: 100%;
     }
 
+    .third2 img {
+        width: 45%;
+        margin: 8px 0;
+    }
+
+    .third2 div {
+        width: 45%;
+    }
+
     .box2 {
         padding-top: 4px;
     }
@@ -679,6 +688,14 @@ main {
 
     .third {
         margin: 8px 0;
+    }
+
+    .third2 img {
+        width: 100%;
+    }
+
+    .third2 div {
+        width: 100%;
     }
 
     .third div:last-child {
