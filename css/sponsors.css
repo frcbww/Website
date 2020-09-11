@@ -6,7 +6,6 @@ div.sponsors h1 {
     position: relative;
     display: inline-block;
     padding: 0 20%;
-    /*margin: 0;*/
     border-bottom: none;
     font-weight: initial;
 }
@@ -42,7 +41,7 @@ div.sponsors h1:after {
 
 .company-box h3 {
     text-align: center;
-    font-size: 24px;
+    font-size: 20px;
     padding-top: 4px;
 }
 
@@ -56,7 +55,7 @@ div.sponsors h1:after {
     }
 
     .company-box h3 {
-        font-size: 20px;
+        font-size: 16px;
     }
 }
 

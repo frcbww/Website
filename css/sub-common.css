@@ -246,7 +246,7 @@ img.large {
 
 .button1 a {
     display: inline-block;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
     color: #212121;
     border-radius: 3px;
@@ -254,7 +254,7 @@ img.large {
     transition: all 0.3s ease 0s;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     border: solid 2px #212121;
-    padding: 14px 40px;
+    padding: 12px 40px;
 }
 
 .button1 a:hover {
