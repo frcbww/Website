@@ -1,0 +1,65 @@
+div.sponsors {
+    text-align: center;
+}
+
+div.sponsors h1 {
+    position: relative;
+    display: inline-block;
+    padding: 0 20%;
+    margin: 0;
+    border-bottom: none;
+    font-weight: initial;
+}
+
+div.sponsors h1:before, div.sponsors h1:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    width: 16%;
+    height: 1px;
+    background-color: #212121;
+}
+
+div.sponsors h1:before {
+    left: 0;
+}
+
+div.sponsors h1:after {
+    right: 0;
+}
+
+.platinum {
+    margin: 0 auto 5vw;
+    max-width: 1024px;
+    height: auto;
+}
+
+.platinum img {
+    margin: 0;
+}
+
+.platinum h3 {
+    text-align: center;
+    font-size: 24px;
+}
+
+@media screen and (max-width: 680px) {
+    div.sponsors h1 {
+        padding: 0 16%;
+    }
+
+    div.sponsors h1:before, div.sponsors h1:after {
+        width: 12%;
+    }
+
+    .platinum h3 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .platinum h3 {
+        font-size: 16px;
+    }
+}
