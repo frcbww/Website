@@ -254,7 +254,7 @@ img.large {
     transition: all 0.3s ease 0s;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     border: solid 2px #212121;
-    padding: 12px 40px;
+    padding: 14px 40px;
 }
 
 .button1 a:hover {
