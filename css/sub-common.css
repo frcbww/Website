@@ -244,7 +244,7 @@ img.large {
     margin: 16px 0;
 }
 
-.button1 a {
+.button1 a, .button1 a.full {
     display: inline-block;
     font-size: 14px;
     font-weight: bold;
@@ -255,6 +255,12 @@ img.large {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     border: solid 2px #212121;
     padding: 14px 48px;
+}
+
+.button1 a.full {
+    width: 90%;
+    text-align: center;
+    padding: 14px 4vw;
 }
 
 .button1 a:hover {
@@ -684,6 +690,10 @@ main {
 
     strong {
         font-size: 18px;
+    }
+
+    .button1 a {
+        padding: 14px 24px;
     }
 
     .third {
