@@ -253,7 +253,7 @@ header > a:active {
 
 .footer-upper {
     color: #ffffff;
-    background-color: #424242;
+    background-color: #333333;
     height: 240px;
     display: flex;
     align-items: center;
@@ -342,7 +342,7 @@ header > a:active {
 
 .footer-lower {
     color: #ffffff;
-    background-color: #616161;
+    background-color: #424242;
     height: 50px;
     font-size: 12px;
     display: flex;
