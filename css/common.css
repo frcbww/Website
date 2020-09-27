@@ -36,6 +36,11 @@
     touch-action: manipulation;
 }
 
+::selection {
+    color: #fff;
+    background: #212121;
+}
+
 body {
     overflow-y: scroll;
 }
