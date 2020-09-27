@@ -25,6 +25,10 @@
     font-family: 'Catamaran', sans-serif;
 }
 
+.top-text span > span {
+    color: #4DD0E1;
+}
+
 .top-scroll-hint {
     position: absolute;
     left: 50%;
@@ -48,7 +52,7 @@
 }
 
 .top-scroll-hint:hover {
-    background-color: rgba(0, 0, 0, .08);
+    background-color: rgba(0, 0, 0, .04);
 }
 
 .top-filter:after {
