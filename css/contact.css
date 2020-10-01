@@ -1,0 +1,83 @@
+form {
+    padding-bottom: 40px;
+}
+
+.box {
+    margin: 0 auto 32px auto;
+    max-width: 840px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    width: calc(100% - 20px);
+    max-width: 400px;
+    padding: 8px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    appearance: none;
+}
+
+.select-wrap {
+    position: relative;
+    width: 100%;
+    max-width: 250px;
+}
+
+.select-wrap:before {
+    position: absolute;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    top: 0;
+    right: 12px;
+    content: "\f107";
+    font-family: 'icomoon', serif;
+    font-weight: normal;
+    pointer-events: none;
+}
+
+.select-wrap select {
+    width: 100%;
+    outline: none;
+    appearance: none;
+    height: 40px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+textarea {
+    width: calc(100% - 20px);
+    height: 240px;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    appearance: none;
+}
+
+input[type='submit'] {
+    border: none;
+    display: block;
+    width: 100%;
+    max-width: 840px;
+    padding: 12px;
+    border-radius: 2px;
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+    appearance: none;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 680px) {
+    form {
+        padding-bottom: 8px;
+    }
+}

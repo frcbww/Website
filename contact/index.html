@@ -23,12 +23,13 @@
 
     <link rel="stylesheet" href="../css/common.css" as="style">
     <link rel="stylesheet" href="../css/sub-common.css">
+    <link rel="stylesheet" href="../css/contact.css">
     <link rel="icon" href="../img/favicon.ico">
 <body>
 <header>
     <a href="../">
         <picture>
-            <source type="image/webp" srcset="../img/common/webp/BWW-transparent-logo.webp" />
+            <source type="image/webp" srcset="../img/common/webp/BWW-transparent-logo.webp"/>
             <img src="../img/common/BWW-transparent-logo.png" alt="BWW">
         </picture>
     </a>
@@ -43,7 +44,8 @@
                             <a href="../about-us/members/"><span>メンバーの紹介<i class="fas fa-arrow-right"></i></span></a>
                         </li>
                         <li class="sub-menu-item">
-                            <a href="../about-us/recruiting/"><span>2021年度メンバー募集<i class="fas fa-arrow-right"></i></span></a>
+                            <a href="../about-us/recruiting/"><span>2021年度メンバー募集<i
+                                    class="fas fa-arrow-right"></i></span></a>
                         </li>
                     </ul>
                 </li>
@@ -73,7 +75,42 @@
     </div>
 </section>
 <main>
-    <section style="height: 60vh"></section>
+    <section class="h1-section">
+        <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSckbeC4TTTDLGZltbTirUuq8vDHMvfGZ_sQTG5HHCLVwaRdbQ/formResponse"
+              id="form">
+            <div class="box" style="margin-bottom: 48px">
+                <strong>FRC・FLLについてのご質問・チームに関するご質問など、お気軽にお問い合わせください！</strong>
+            </div>
+            <div class="box">
+                <label for="name">お名前・チーム名</label>
+                <input type="text" name="entry.2005620554" id="name" placeholder="お名前・チーム名" required>
+            </div>
+            <div class="box">
+                <label for="mail">メールアドレス</label>
+                <input type="email" name="entry.1045781291" id="mail" placeholder="メールアドレス" required>
+            </div>
+            <div class="box">
+                <label for="type">お問い合わせの種類</label>
+                <div class="select-wrap">
+                    <select name="entry.2013220444" id="type" required>
+                        <option data-value="チームに関するご質問" value="チームに関するご質問">チームに関するご質問</option>
+                        <option data-value="FRCに関するご質問" value="FRCに関するご質問">FRCに関するご質問</option>
+                        <option data-value="FLLに関するご質問" value="FLLに関するご質問">FLLに関するご質問</option>
+                        <option data-value="取材申し込み" value="取材申し込み">取材申し込み</option>
+                        <option data-value="スポンサー関連" value="スポンサー関連">スポンサー関連</option>
+                        <option data-value="チームへのご意見・応援等" value="チームへのご意見・応援等">チームへのご意見・応援等</option>
+                        <option data-value="その他" value="その他">その他</option>
+                    </select>
+                </div>
+            </div>
+            <div class="box">
+                <label for="content">お問い合わせ内容</label>
+                <textarea name="entry.839337160" id="content" placeholder="お問い合わせ内容"
+                          required></textarea>
+            </div>
+            <input type="submit" class="submit-btn">
+        </form>
+    </section>
 </main>
 <footer>
     <div class="footer-upper">
@@ -123,5 +160,39 @@
 <script type="text/javascript" src="../js/anime.min.js"></script>
 <script type="text/javascript" src="../js/common.js"></script>
 <script type="text/javascript" src="../js/modernizr-custom.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#form').submit(function (event) {
+            const formData = $('#form').serialize();
+            $.ajax({
+                url: "https://docs.google.com/forms/u/1/d/e/1FAIpQLSckbeC4TTTDLGZltbTirUuq8vDHMvfGZ_sQTG5HHCLVwaRdbQ/formResponse",
+                data: formData,
+                type: "POST",
+                dataType: "xml",
+                statusCode: {
+                    0: function () {
+                        swal({
+                            title: 'お問い合わせいただきありがとうございました',
+                            text: 'ご入力いただいたメールアドレス宛にご回答を送らせていただきます。\n恐れ入りますが、今しばらくお待ちいただけますようお願いします。',
+                            icon: 'success',
+                            button: 'OK'
+                        });
+                    },
+                    200: function () {
+                        swal({
+                            title: 'エラー',
+                            text: 'お問い合わせの送信に失敗しました',
+                            icon: 'error',
+                            button: '閉じる'
+                        });
+                    }
+                }
+            });
+            event.preventDefault();
+        });
+    });
+</script>
 </body>
 </html>
