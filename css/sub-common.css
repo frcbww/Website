@@ -345,7 +345,6 @@ code {
 }
 
 .box1 p {
-    font-size: 16px;
     padding: 16px 20px;
 }
 
@@ -411,10 +410,6 @@ code {
 .box2 h3 span {
     color: #41B3BF;
     padding-right: 16px;
-}
-
-.box2 p {
-    font-size: 16px;
 }
 
 .box2 img {
@@ -610,12 +605,18 @@ main {
         margin-bottom: 16px;
     }
 
+    p {
+        font-size: 15px;
+    }
+
     ul.design li {
         padding: 4px 0;
+        font-size: 15px;
     }
 
     ol.design li {
         padding: 4px 0;
+        font-size: 15px;
     }
 
     img {
