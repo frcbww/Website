@@ -1,3 +1,13 @@
+// Googleアナリティクス
+window.dataLayer = window.dataLayer || [];
+
+function gtag() {
+    dataLayer.push(arguments);
+}
+
+gtag('js', new Date());
+gtag('config', 'UA-145821103-2');
+
 window.addEventListener('scroll', function () {
     // 一定以上スクロールしたらヘッダーの色を変更する
     const header = document.querySelector('header');
