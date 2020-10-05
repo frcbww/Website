@@ -1,13 +1,3 @@
-// Googleアナリティクス
-window.dataLayer = window.dataLayer || [];
-
-function gtag() {
-    dataLayer.push(arguments);
-}
-
-gtag('js', new Date());
-gtag('config', 'UA-145821103-2');
-
 window.addEventListener('scroll', function () {
     // 一定以上スクロールしたらヘッダーの色を変更する
     const header = document.querySelector('header');
@@ -32,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // 画像の遅延読み込み
             if ("IntersectionObserver" in window) {
-                let lazyImageObserver = new IntersectionObserver(function (entries, observer) {
+                let lazyImageObserver = new IntersectionObserver(function (entries) {
                     entries.forEach(function (entry) {
                         if (entry.isIntersecting) {
                             let lazyImage = entry.target;
