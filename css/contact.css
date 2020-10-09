@@ -19,6 +19,7 @@ input {
     border-radius: 2px;
     border: 1px solid #ccc;
     appearance: none;
+    -webkit-appearance: none;
 }
 
 .select-wrap {
@@ -44,6 +45,7 @@ input {
     width: 100%;
     outline: none;
     appearance: none;
+    -webkit-appearance: none;
     height: 40px;
     padding: 8px;
     border: 1px solid #ccc;
@@ -59,6 +61,7 @@ textarea {
     border-radius: 2px;
     border: 1px solid #ccc;
     appearance: none;
+    -webkit-appearance: none;
 }
 
 input[type='submit'] {
@@ -72,6 +75,7 @@ input[type='submit'] {
     color: #fff;
     font-weight: bold;
     appearance: none;
+    -webkit-appearance: none;
     cursor: pointer;
     margin: 0 auto;
 }
