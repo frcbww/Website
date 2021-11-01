@@ -22,12 +22,31 @@ h1 span {
 
 h2 {
     position: relative;
-    border-bottom: 3px double #212121;
-    padding-bottom: 4px;
-    padding-left: 12px;
+    display: flex;
+    align-items: center;
+    /*border-bottom: 3px double #212121;*/
+    /*padding-bottom: 4px;*/
+    /*padding-left: 12px;*/
     line-height: 1.4;
+    margin-top: 8px;
     margin-bottom: 20px;
     font-size: 24px;
+}
+
+h2:before {
+    content: '';
+    flex-grow: 1;
+    height: 1px;
+    background: grey;
+    margin-right: 32px;
+}
+
+h2:after {
+    content: '';
+    flex-grow: 32;
+    height: 1px;
+    background: grey;
+    margin-left: 32px;
 }
 
 p {
@@ -603,6 +622,15 @@ main {
     h2 {
         font-size: 20px;
         margin-bottom: 16px;
+    }
+
+    h2:before {
+        margin-right: 16px;
+    }
+
+    h2:after {
+        flex-grow: 12;
+        margin-left: 16px;
     }
 
     p {
